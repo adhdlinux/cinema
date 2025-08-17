@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <PreferenceCategory app:title="@string/account">
+        <Preference app:icon="@drawable/ic_subtitles_24dp" app:key="pref_open_subtitle_summary" app:title="@string/open_subtitle" app:useSimpleSummaryProvider="true"/>
+    </PreferenceCategory>
+    <Preference app:key="button_open_subtitles_logout" app:title="@string/sign_out"/>
+</PreferenceScreen>

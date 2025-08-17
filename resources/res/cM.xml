@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <tab barColorWhenSelected="#ff006064" icon="@drawable/ic_live_tv_white_24dp" id="@+id/tab_tv_show" title="Tv Series"/>
+    <tab barColorWhenSelected="#ff006064" icon="@drawable/ic_home" id="@+id/tab_home" title="Home"/>
+    <tab barColorWhenSelected="#ff006064" icon="@drawable/ic_movie_filter" id="@+id/tab_news" title="New"/>
+    <tab barColorWhenSelected="#ff006064" icon="@drawable/ic_search" id="@+id/tab_search" showShadow="true" title="Search"/>
+    <tab icon="@drawable/ic_favorite" id="@+id/tab_favorite" title="Favorites"/>
+    <tab barColorWhenSelected="#ff9800" icon="@drawable/ic_download" id="@+id/tab_download" title="Download"/>
+    <tab barColorWhenSelected="#ff9800" icon="@drawable/share_icon" id="@+id/tab_share" title="Share"/>
+</tabs>

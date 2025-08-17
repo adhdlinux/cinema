@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/drawer_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <include layout="@layout/toolbar"/>
+            <FrameLayout android:id="@+id/adView" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <FrameLayout android:scrollbarStyle="outsideOverlay" android:id="@+id/movies_container" android:paddingBottom="@dimen/footer_height" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </LinearLayout>
+        <ImageButton android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/leftnagivation_btn" android:background="@drawable/leftnavigation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="false"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <LinearLayout android:layout_gravity="start" android:orientation="vertical" android:id="@+id/left_view" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@color/colorAccent" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_xlarge" android:textColor="@color/body_text_white" android:gravity="center" android:id="@+id/currentVersion" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="1.0.2"/>
+            <View android:id="@+id/divider" android:background="?android:attr/listDivider" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <Button android:textSize="@dimen/text_size_medium" android:textColor="@color/body_text_white" android:id="@+id/lastestversion" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="get lastest version"/>
+            <View android:id="@+id/divider2" android:background="?android:attr/listDivider" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <ImageButton android:id="@+id/shareapp" android:background="@color/transparent" android:padding="@dimen/keyline_1_minus_16dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_share"/>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/left_nativation_listview" android:layout_width="200dp" android:layout_height="match_parent"/>
+    </LinearLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

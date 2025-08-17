@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <group android:checkableBehavior="single">
+        <item android:icon="@drawable/ic_live_tv_white_24dp" android:id="@+id/nav_tv_show" android:title="@string/tvshow"/>
+        <item android:icon="@drawable/ic_movie_filter" android:id="@+id/nav_movie" android:title="@string/movies"/>
+        <item android:icon="@drawable/ic_movie_filter" android:id="@+id/nav_lists" android:title="@string/featurelist"/>
+        <item android:icon="@drawable/flow_user" android:id="@+id/nav_my_list" android:title="@string/mylist"/>
+        <item android:icon="@drawable/ic_favorite" android:id="@+id/nav_favorite" android:title="@string/favorite"/>
+        <item android:icon="@drawable/history" android:id="@+id/nav_history" android:title="@string/history"/>
+        <item android:icon="@drawable/baseline_today_white_48dp" android:id="@+id/nav_calendar" android:title="@string/calendar"/>
+    </group>
+    <item android:title="Tools">
+        <menu>
+            <item android:icon="@drawable/ic_download" android:id="@+id/nav_download" android:title="Downloads"/>
+            <item android:icon="@drawable/ic_setting" android:id="@+id/nav_setting" android:title="@string/title_settings"/>
+            <item android:icon="@drawable/magnet" android:id="@+id/nav_torrent_manager" android:title="@string/title_torrent_packs"/>
+        </menu>
+    </item>
+    <item android:title="Communicate">
+        <menu>
+            <item android:icon="@drawable/donate" android:id="@+id/nav_donate" android:visible="false" android:title="Donate"/>
+            <item android:icon="@drawable/ic_menu_share" android:id="@+id/nav_share" android:title="Share"/>
+            <item android:icon="@drawable/ic_star_border_white_36dp" android:id="@+id/nav_rate" android:visible="false" android:title="Rate me!"/>
+            <item android:icon="@drawable/ic_action_refresh" android:id="@+id/nav_checkLastest" android:title="Check for updates.."/>
+            <item android:icon="@drawable/membership_24dp" android:id="@+id/nav_activate" android:title="@string/membership_header"/>
+        </menu>
+    </item>
+</menu>

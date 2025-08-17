@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/root_view" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="4dp" android:foreground="@drawable/rounded_corner" app:cardCornerRadius="10dp">
+    <androidx.constraintlayout.widget.ConstraintLayout android:background="@color/darkBlueGrey" android:layout_width="match_parent" android:layout_height="@dimen/membership_view_height">
+        <ImageView android:id="@+id/membershipIcon" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_margin="8dp" android:src="@drawable/membership_24dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="4dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toEndOf="@+id/membershipIcon">
+            <TextView android:id="@+id/membership_header" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/membership_header" style="@style/ActionBar.TitleText"/>
+            <TextView android:id="@+id/membership_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/membership_text"/>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

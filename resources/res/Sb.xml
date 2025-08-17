@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:icon="@drawable/tvdb" android:id="@+id/forceTVDB" android:orderInCategory="100" android:title="Switch tv source" app:showAsAction="always"/>
+    <item android:icon="@drawable/magnet" android:id="@+id/magnet" android:orderInCategory="100" android:title="Add magnet" app:showAsAction="always"/>
+    <item android:icon="@drawable/sort_season_icon" android:id="@+id/resorting" android:orderInCategory="100" android:title="Sort Season" app:showAsAction="ifRoom"/>
+</menu>

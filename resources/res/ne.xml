@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:icon="@drawable/ic_favorite_border" android:id="@+id/video_player_save_favorite" android:orderInCategory="100" android:title="Save to favorites" app:showAsAction="ifRoom"/>
+    <item android:icon="@drawable/ic_grade_white_18dp" android:id="@+id/rateme" android:orderInCategory="150" android:title="Subtitle" app:showAsAction="ifRoom"/>
+    <item android:icon="@drawable/ic_high_quality_white_18dp" android:id="@+id/video_player_quality" android:orderInCategory="200" android:title="Quality" app:showAsAction="ifRoom"/>
+    <item android:icon="@drawable/ic_subtitles_white_18dp" android:id="@+id/video_player_subtile" android:orderInCategory="300" android:title="Subtitle" app:showAsAction="ifRoom"/>
+</menu>

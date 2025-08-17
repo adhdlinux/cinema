@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <PreferenceCategory app:title="OpenSubtitle">
+        <Preference app:icon="@drawable/ic_subtitles_24dp" app:key="pref_open_subtitle_summary" app:title="@string/open_subtitle"/>
+        <Preference app:key="button_open_subtitles_logout" app:title="@string/sign_out"/>
+    </PreferenceCategory>
+    <PreferenceCategory app:title="General">
+        <MultiSelectListPreference android:title="Choose default subtitle" android:key="pref_sub_language_international_v3" android:summary="English"/>
+        <Preference android:title="Choose subtitle color" android:key="pref_cc_subs_font_color" android:summary="#FFFFFFFF"/>
+        <ListPreference android:entries="@array/fontSize" android:title="Subtitle Font Size" android:key="pref_cc_subs_font_scale2" android:summary="%1$s" android:defaultValue="1" android:entryValues="@array/fontSize_values"/>
+        <MultiSelectListPreference android:entries="@array/subtitle_source" android:title="Choose subtitle sources" android:key="pref_sub_enable_providers" android:summary="OpenSubtitle" android:entryValues="@array/subtitle_source_values"/>&quot; /&gt; 
+    </PreferenceCategory>
+</PreferenceScreen>

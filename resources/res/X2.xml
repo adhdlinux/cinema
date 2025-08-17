@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <solid android:color="?attr/colorBackgroundPlaceholder"/>
+    <corners android:radius="@dimen/imagePosterCorners"/>
+    <size android:height="@dimen/placeholder_backdrop_height" android:width="@dimen/placeholder_backdrop_width"/>
+</shape>

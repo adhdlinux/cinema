@@ -1,0 +1,11 @@
+package com.google.android.exoplayer2;
+
+import android.os.Bundle;
+import com.google.android.exoplayer2.Bundleable;
+import com.google.android.exoplayer2.Player;
+
+public final /* synthetic */ class w1 implements Bundleable.Creator {
+    public final Bundleable a(Bundle bundle) {
+        return Player.Commands.d(bundle);
+    }
+}

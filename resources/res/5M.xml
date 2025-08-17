@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <ListPreference android:title="Choose default player" android:key="pref_choose_default_player" android:summary="%1$s"/>
+    <ListPreference android:title="Choose poster image size (Landscape Mode)" android:key="pref_column_in_main"/>
+    <ListPreference android:title="Choose default play action" android:key="pref_choose_default_action" android:summary="%1$s"/>
+    <ListPreference android:entries="@array/defaulttabs" android:title="Choose default opening screen" android:key="pref_choose_default_tab" android:summary="%1$s" android:defaultValue="Tv/Shows" android:entryValues="@array/defaulttabs"/>
+    <ListPreference android:entries="@array/history_size_entries" android:title="Maximum of movies/shows History page size" android:key="pref_limit_history_size" android:summary="%1$s" android:defaultValue="Unlimited" android:entryValues="@array/history_size_entries"/>
+    <SwitchPreferenceCompat android:title="Disable non-English movies/tvShow" android:key="pref_disable_non_english" android:defaultValue="false"/>
+    <SwitchPreferenceCompat android:title="Show aired episode only " android:key="pref_show_aried_eps_only2" android:defaultValue="true"/>
+    <SwitchPreferenceCompat android:title="Show season specials" android:key="pref_show_special_season" android:defaultValue="false"/>
+    <Preference android:title="Change Logs" android:key="pref_changelog"/>
+    <SwitchPreferenceCompat android:title="Auto generate background color" android:key="pref_change_bg_color" android:defaultValue="true"/>
+    <Preference android:title="Clear cache" android:key="pref_clear_cache"/>
+    <Preference android:title="Verify ReCaptchar" android:key="pref_recoptchar"/>
+    <CheckBoxPreference android:checked="false" android:title="Auto CAPTCHA Resolver" android:key="pref_use_webview_bypass"/>
+    <SeekBarPreference android:max="30" android:title="Playback Record " android:key="pref_mark_saving_percent" android:summary="Adjust the time limit for recording playback progress to resume the next play, between 1 and 30 minutes." android:defaultValue="1" app:min="1" app:showSeekBarValue="true"/>
+    <SwitchPreferenceCompat android:title="Show file name if available" android:key="pref_show_file_name_if_available" android:defaultValue="false"/>
+</PreferenceScreen>

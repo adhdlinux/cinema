@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:orientation="vertical" android:background="#ffffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:gravity="center" android:id="@+id/bg" android:background="#da5f6a" android:layout_width="match_parent" android:layout_height="120dp" android:src="@drawable/placeholder_movie_details_image" android:scaleType="fitCenter"/>
+    <TextView android:textSize="18sp" android:textColor="#ff000000" android:gravity="center_horizontal" android:id="@+id/text_dialog" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_marginTop="20dp" android:layout_marginRight="4dp" android:layout_marginBottom="20dp" android:text="Do you want to upgrade new servion?" android:layout_below="@+id/bg" android:layout_centerHorizontal="true"/>
+    <View android:layout_width="match_parent" android:layout_height="1dp"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+        <Button android:id="@+id/btn_cancel_dialog" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cancel" android:layout_weight="1"/>
+        <Button android:id="@+id/btn_ok_dialog" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Install" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

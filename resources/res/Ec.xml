@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/gray_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_large" android:textColor="#ffffff" android:gravity="center" android:id="@+id/textView2" android:background="@color/gray_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/autoupdate_title"/>
+        <View android:background="@color/card_shape_background" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <TextView android:gravity="center" android:id="@+id/message_autoupdate_error" android:layout_width="match_parent" android:layout_height="50dp" android:text="@string/autoupdate_retry_content" android:ems="10" android:inputType="textMultiLine"/>
+        <LinearLayout android:gravity="right" android:orientation="horizontal" android:background="@color/theme_primary_dark" android:layout_width="match_parent" android:layout_height="35dp" android:layout_marginTop="3dp">
+            <Button android:textColor="#ffffff" android:id="@+id/dig_autoupdate_error_cancel" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3dp" android:text="@string/autoupdate_confirm_cancel"/>
+            <Button android:textColor="#ffffff" android:id="@+id/btn_update_error" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/autoupdate_confirm_retry"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

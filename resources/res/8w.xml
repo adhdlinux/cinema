@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <SwitchPreferenceCompat android:title="Autoplay next episode (TV/Show)" android:key="pref_auto_next_eps" android:defaultValue="false"/>
+    <SwitchPreferenceCompat android:title="Auto next with first subtitle in list" android:key="pref_auto_next_with_fisrt_sub" android:defaultValue="false"/>
+    <EditTextPreference android:digits="0123456789" android:title="Number of links to auto play next (TV/Show)" android:key="pref_auto_next_eps_number_of_link" android:summary="%s" android:defaultValue="10" android:inputType="number"/>
+</PreferenceScreen>

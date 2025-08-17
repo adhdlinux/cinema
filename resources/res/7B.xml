@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:id="@+id/userlist_item" android:background="@drawable/rounded_corner" android:padding="10dp" android:focusable="true" android:focusableInTouchMode="true" android:nextFocusRight="@+id/deleteUserButton" android:clickable="true" android:descendantFocusability="beforeDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <CheckBox android:id="@+id/userEnableCheckBox" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <TextView android:textSize="18sp" android:id="@+id/userNameTextView" android:layout_width="0dp" android:layout_height="wrap_content" android:text="User Name" android:layout_weight="1"/>
+    <ImageButton android:id="@+id/deleteUserButton" android:background="?android:attr/selectableItemBackground" android:focusable="true" android:focusableInTouchMode="true" android:nextFocusLeft="@+id/userlist_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@android:drawable/ic_delete" android:contentDescription="Delete"/>
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" app:iconSpaceReserved="false">
+    <PreferenceCategory android:title="GENERAL" android:key="setting_general_title">
+        <Preference android:title="Choose default player" android:key="pref_choose_default_player" android:summary="Cinema"/>
+        <Preference android:title="Choose poster image size (Landscape Mode)" android:key="pref_column_in_main" android:summary="Medium"/>
+        <Preference android:title="Choose default play action" android:key="pref_choose_default_action" android:summary="Always ask"/>
+        <Preference android:title="Choose default opening screen" android:key="pref_choose_default_tab" android:summary="Tv/Shows"/>
+        <CheckBoxPreference android:title="Show aired episode only " android:key="pref_show_aried_eps_only2"/>
+        <CheckBoxPreference android:title="Show season specials" android:key="pref_show_special_season"/>
+        <CheckBoxPreference android:title="Login RD, AD, Trakt as TV mode" android:key="pref_force_tv_mode"/>
+        <Preference android:title="Change Logs" android:key="pref_changelog"/>
+        <CheckBoxPreference android:checked="false" android:title="Auto generate background color" android:key="pref_change_bg_color"/>
+        <Preference android:title="Clear cache" android:key="pref_clear_cache"/>
+        <Preference android:title="Verify ReCaptchar" android:key="pref_recoptchar"/>
+        <CheckBoxPreference android:checked="false" android:title="Auto CAPTCHA Resolver" android:key="pref_use_webview_bypass"/>
+        <SeekBarPreference android:max="30" android:title="Mark watched time" android:key="pref_mark_saving_percent" android:summary="Adjust between 1 to 30 minutes" android:defaultValue="1" app:min="1" app:showSeekBarValue="true"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Player Plugin" android:key="PlayerPlugin (coming soon)">
+        <Preference android:title="Player Plugin " android:key="pref_use_player_plugin" android:summary="Remote streaming on tv by your phone"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="PERFORMANCE" android:key="PERFORMANCE">
+        <CheckBoxPreference android:title="Show HD only " android:key="pref_show_hd_only"/>
+        <CheckBoxPreference android:title="Filter out CAM quality " android:key="pref_filter_cam"/>
+        <CheckBoxPreference android:title="Filter out CAM quality " android:key="pref_show_x256_first"/>
+        <CheckBoxPreference android:checked="false" android:title="Low profile (Restart required)" android:key="pref_low_profilev2" android:summary="Reduce graphics effect, limit resolver threshold in 500ms"/>
+        <Preference android:title="Choose providers to enable..." android:key="pref_choose_provider_enabled2" android:summary="You can remove unlike providers to optimize performance of device"/>
+        <CheckBoxPreference android:title="Sort links ordered by size " android:key="pref_show_sort_link_by_size2"/>
+        <CheckBoxPreference android:title="Sort links ordered by quality " android:key="pref_show_sort_link_by_quality"/>
+        <Preference android:title="Choose host priority" android:key="pref_choose_host_priority3" android:summary="Default"/>
+        <CheckBoxPreference android:title="Keep service alive in background" android:key="pref_keep_alive" android:summary=""/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="AUTO PLAY" android:key="auto_play_next">
+        <CheckBoxPreference android:checked="false" android:title="Autoplay next episode (TV/Show)" android:key="pref_auto_next_eps"/>
+        <CheckBoxPreference android:checked="false" android:title="Auto next with first subtitle in list" android:key="pref_auto_next_with_fisrt_sub"/>
+        <Preference android:title="Number of links to auto play next (TV/Show)" android:key="pref_auto_next_eps_number_of_link" android:summary="10"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="PREMIUM ACCOUNT" android:key="setting_real_debrid_title">
+        <Preference android:title="Login to Real-Debrid" android:key="pref_auth_real_debrid"/>
+        <Preference android:title="Login to All-Debrid" android:key="pref_auth_All_debrid"/>
+        <Preference android:title="Login to Premiumize" android:key="pref_auth_premiumize_debrid"/>
+        <CheckBoxPreference android:title="Show debrid only " android:key="pref_show_debrid_only"/>
+        <CheckBoxPreference android:title="Turn off reslove premium links (Recommended)" android:key="pref_off_premium_resolve5" android:summary="Resolve premium links when play, reduce amount requests to Premium Services, cleaning up your Download History" android:singleLineTitle="false"/>
+        <SeekBarPreference android:max="10" android:title="Limit request calls per second" android:key="pref_rd_request_per_second" android:defaultValue="4" app:min="3" app:showSeekBarValue="true"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="TRAKT TV" android:key="setting_trakt_title">
+        <Preference android:title="Login to Trakt TV" android:key="pref_auth_trakt_tv"/>
+        <CheckBoxPreference android:title="Show my trakt calendar shows only" android:key="pre_show_my_calenda_shows_only"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="SUBTITLES" android:key="setting_subtitles_title">
+        <Preference android:title="Choose default subtitle" android:key="pref_sub_language_international_v3" android:summary="English"/>
+        <Preference android:title="Choose subtitle color" android:key="pref_cc_subs_font_color" android:summary="#FFFFFFFF"/>
+        <Preference android:title="Subtitle Font Size" android:key="pref_cc_subs_font_scale2" android:summary="1.05"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="DOWNLOAD" android:key="setting_download_title">
+        <Preference android:title="Media download path" android:key="pref_dowload_path3"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Members" android:key="member_setting">
+        <Preference android:title="Member code" android:key="pref_cc_unlock_full_version" android:summary=""/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="SECURITY" android:key="security_setting">
+        <Preference android:title="Set password" android:key="pref_set_password" android:summary=""/>
+        <CheckBoxPreference android:title="Search restrict" android:key="pref_restrict_search"/>
+        <Preference android:title="Choose categories to restrict" android:key="pref_category_restriction" android:summary=""/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="BACKUP/RESTORE" android:key="BACKUP/RESTORE">
+        <Preference android:title="Backup" android:key="pref_backup" android:summary="Backup all favorites,historys,settings to /Download/cinemahd/backup"/>
+        <Preference android:title="Restore" android:key="pref_restore"/>
+        <CheckBoxPreference android:title="Auto backup after exit app" android:key="pref_auto_backup_when_exit_app"/>
+    </PreferenceCategory>
+</PreferenceScreen>

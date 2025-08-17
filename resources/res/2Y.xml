@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/gray_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_large" android:textColor="#ffffff" android:gravity="center" android:id="@+id/textView2" android:background="@color/gray_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/autoupdate_title"/>
+        <View android:background="@color/card_shape_background" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <TextView android:gravity="center_horizontal" android:id="@+id/message_autoupdate" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/autoupdate_main_content" android:ems="10" android:inputType="textMultiLine"/>
+        <LinearLayout android:gravity="right" android:orientation="horizontal" android:background="@color/theme_primary_dark" android:layout_width="match_parent" android:layout_height="30dp" android:layout_marginTop="3dp">
+            <CheckBox android:textColor="#ffffff" android:id="@+id/autoupdate_checkBox4" android:background="@drawable/btn_border_transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/autoupdate_dont_show" android:layout_weight="3" android:buttonTint="@color/white"/>
+            <Button android:textSize="@dimen/text_size_small" android:textColor="#ffffff" android:id="@+id/diag_btn_autoupdate_cancel" android:background="@drawable/btn_border_transparent" android:layout_width="70dp" android:layout_height="wrap_content" android:text="@string/autoupdate_confirm_cancel"/>
+            <Button android:textSize="@dimen/text_size_small" android:textColor="#ffffff" android:id="@+id/btn_update" android:background="@drawable/btn_border_transparent" android:layout_width="75dp" android:layout_height="wrap_content" android:text="@string/autoupdate_confirm_install"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

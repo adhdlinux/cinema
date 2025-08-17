@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/sync_trakt" android:orderInCategory="100" android:title="@string/action_synctrakt" app:showAsAction="never"/>
+    <item android:id="@+id/favorite_menu_sort_az" android:orderInCategory="100" android:title="@string/action_show_sort_az" app:showAsAction="never"/>
+    <item android:id="@+id/favorite_menu_sort_za" android:orderInCategory="100" android:title="@string/action_show_sort_za" app:showAsAction="never"/>
+    <item android:id="@+id/favorite_menu_sort_lastest" android:orderInCategory="100" android:title="@string/action_show_sort_latest" app:showAsAction="never"/>
+</menu>

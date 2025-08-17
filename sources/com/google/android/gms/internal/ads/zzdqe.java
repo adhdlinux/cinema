@@ -1,0 +1,19 @@
+package com.google.android.gms.internal.ads;
+
+import com.google.android.gms.common.util.Clock;
+
+public final class zzdqe implements zzgwe {
+    private final zzgwr zza;
+    private final zzgwr zzb;
+    private final zzgwr zzc;
+
+    public zzdqe(zzgwr zzgwr, zzgwr zzgwr2, zzgwr zzgwr3) {
+        this.zza = zzgwr;
+        this.zzb = zzgwr2;
+        this.zzc = zzgwr3;
+    }
+
+    public final /* bridge */ /* synthetic */ Object zzb() {
+        return new zzdqd((zzdpv) this.zza.zzb(), ((zzgwp) this.zzb).zzb(), (Clock) this.zzc.zzb());
+    }
+}

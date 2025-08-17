@@ -1,0 +1,17 @@
+package com.movie.ui.activity.settings.subfragment;
+
+import io.reactivex.functions.Action;
+
+public final /* synthetic */ class e implements Action {
+
+    /* renamed from: b  reason: collision with root package name */
+    public final /* synthetic */ BackupRestoreFragment f32646b;
+
+    public /* synthetic */ e(BackupRestoreFragment backupRestoreFragment) {
+        this.f32646b = backupRestoreFragment;
+    }
+
+    public final void run() {
+        this.f32646b.showRestoreSuccessDialog();
+    }
+}

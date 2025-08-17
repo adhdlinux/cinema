@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <SwitchPreferenceCompat android:title="Show HD only " android:key="pref_show_hd_only" android:defaultValue="false"/>
+    <SwitchPreferenceCompat android:title="Filter out CAM quality " android:key="pref_filter_cam" android:defaultValue="false"/>
+    <SwitchPreferenceCompat android:checked="false" android:title="Low profile (Restart required)" android:key="pref_low_profilev2" android:summary="Reduce graphics effect, limit resolver threshold in 500ms" android:defaultValue="false"/>
+    <MultiSelectListPreference android:title="Choose providers to enable..." android:key="pref_choose_provider_enabled2" android:summary="You can remove unlike providers to optimize performance of device"/>
+    <SwitchPreferenceCompat android:title="Sort links ordered by size " android:key="pref_show_sort_link_by_size2" android:defaultValue="true"/>
+    <SwitchPreferenceCompat android:title="Sort links ordered by quality " android:key="pref_show_sort_link_by_quality" android:defaultValue="true"/>
+    <Preference android:title="Choose host priority" android:key="pref_choose_host_priority3" android:summary="Default"/>
+    <SwitchPreferenceCompat android:title="Keep service alive in background" android:key="pref_keep_alive" android:summary="" android:defaultValue="false"/>
+</PreferenceScreen>

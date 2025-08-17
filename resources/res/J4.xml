@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:icon="@drawable/ic_action_sort" android:id="@+id/menu_sort" android:visible="false" android:title="@string/menu_sort" app:showAsAction="always">
+        <menu>
+            <group android:id="@+id/menu_sort_group" android:checkableBehavior="single">
+                <item android:id="@+id/menu_sort_popularity" android:title="@string/menu_sort_popularity"/>
+                <item android:id="@+id/menu_sort_vote_count" android:title="@string/menu_sort_vote_count"/>
+                <item android:id="@+id/menu_sort_vote_average" android:title="@string/menu_sort_vote_average"/>
+                <item android:id="@+id/menu_sort_favorites" android:title="@string/menu_sort_favorites"/>
+            </group>
+        </menu>
+    </item>
+    <item android:icon="@drawable/ic_action_up" android:id="@+id/menu_scroll_to_top" android:title="@string/menu_scroll_to_top"/>
+    <item android:icon="@drawable/ic_action_up" android:id="@+id/menu_refresh" android:title="@string/menu_refresh"/>
+    <item android:icon="@drawable/ic_action_help" android:id="@+id/menu_about" android:title="@string/menu_about"/>
+    <item android:id="@+id/menu_settings" android:title="@string/menu_settings"/>
+</menu>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <PreferenceCategory android:title="REAL DEBRID">
+        <Preference android:title="Login to Real-Debrid" android:key="pref_auth_real_debrid"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="ALL DEBRID">
+        <Preference android:title="Login to All-Debrid" android:key="pref_auth_All_debrid"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Premiumize">
+        <Preference android:title="Login to Premiumize" android:key="pref_auth_premiumize_debrid"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="TRAKT">
+        <Preference android:title="Login to Trakt TV" android:key="pref_auth_trakt_tv"/>
+        <ListPreference android:entries="@array/trakt_sync_mode" android:title="Trakt Sync mode" android:key="pref_trakt_sync_mode" android:summary="%1$s" android:defaultValue="Merge" android:entryValues="@array/trakt_sync_mode_values"/>
+        <SwitchPreferenceCompat android:title="Automatic sync trakt at startup" android:key="pref_trakt_sync_from_startup" android:defaultValue="false"/>
+        <SwitchPreferenceCompat android:title="Show my trakt calendar shows only" android:key="pre_show_my_calenda_shows_only" android:defaultValue="true"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="GENERAL">
+        <SwitchPreferenceCompat android:title="Show debrid only " android:key="pref_show_debrid_only" android:dependency="pref_auth_real_debrid" android:defaultValue="false"/>
+        <SwitchPreferenceCompat android:title="Login RD, AD, Trakt as TV mode" android:key="pref_force_tv_mode" android:defaultValue="false"/>
+        <SwitchPreferenceCompat android:title="Turn off resolve premium links (Recommended)" android:key="pref_off_premium_resolve5" android:summary="Resolve premium links when play, reduce amount requests to Premium Services, cleaning up your Download History" android:defaultValue="true" app:isPreferenceVisible="false"/>
+    </PreferenceCategory>
+</PreferenceScreen>

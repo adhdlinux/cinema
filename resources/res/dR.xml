@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.google.android.material.textfield.TextInputLayout android:id="@+id/usernameInputLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/username">
+        <com.google.android.material.textfield.TextInputEditText android:id="@+id/usernameEditText" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout android:id="@+id/passwordInputLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/password">
+        <com.google.android.material.textfield.TextInputEditText android:id="@+id/passwordEditText" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView android:textColor="@color/darkRed" android:gravity="center_vertical" android:id="@+id/textError" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/username"/>
+    <Button android:layout_gravity="center" android:id="@+id/loginButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login"/>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="left|center_vertical|center_horizontal|center|start" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/marginSide">
+        <ProgressBar android:id="@+id/loadMore" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:id="@+id/subtitleTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/marginSide" style="@style/ActionBar.TitleText"/>
+    </LinearLayout>
+    <View android:background="?android:attr/listDivider" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <ExpandableListView android:id="@+id/subtitle_expand_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

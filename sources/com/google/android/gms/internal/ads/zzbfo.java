@@ -1,0 +1,17 @@
+package com.google.android.gms.internal.ads;
+
+import android.os.IBinder;
+import android.os.IInterface;
+
+public abstract class zzbfo extends zzatr implements zzbfp {
+    public static zzbfp zzb(IBinder iBinder) {
+        if (iBinder == null) {
+            return null;
+        }
+        IInterface queryLocalInterface = iBinder.queryLocalInterface("com.google.android.gms.ads.internal.formats.client.IOnAppInstallAdLoadedListener");
+        if (queryLocalInterface instanceof zzbfp) {
+            return (zzbfp) queryLocalInterface;
+        }
+        return new zzbfn(iBinder);
+    }
+}

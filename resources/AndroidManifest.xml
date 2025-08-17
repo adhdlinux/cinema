@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="341" android:versionName="3.4.1" android:compileSdkVersion="34" android:compileSdkVersionCodename="14" package="com.yoku.marumovie" platformBuildVersionCode="34" platformBuildVersionName="14">
+    <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="34"/>
+    <queries>
+        <package android:name="com.android.vending"/>
+        <package android:name="com.amazon.venezia"/> * 
+        <package android:name="com.sec.android.app.samsungapps"/>
+        <package android:name="com.huawei.appmarket"/>
+        <intent>
+            <action android:name="android.intent.action.ACTION_VIEW"/>
+            <data android:scheme="https"/>
+        </intent>
+        <package android:name="com.google.android.gms.policy_cast_dynamite"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.MAIN"/>
+        </intent>
+        <package android:name="com.google.ar.core"/>
+    </queries>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+    <uses-feature android:name="android.hardware.location" android:required="false"/>
+    <uses-feature android:name="android.hardware.location.network" android:required="false"/>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"/>
+    <uses-feature android:name="android.software.leanback" android:required="false"/>
+    <uses-feature android:name="android.hardware.bluetooth" android:required="false"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_TOPICS"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <permission android:name="com.yoku.marumovie.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.yoku.marumovie.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <application android:theme="@style/Theme.PopularMovies" android:label="@string/app_name" android:icon="@mipmap/ic_launcher" android:name="com.movie.FreeMoviesApp" android:allowBackup="false" android:hardwareAccelerated="false" android:largeHeap="true" android:supportsRtl="true" android:banner="@drawable/ic_tv" android:usesCleartextTraffic="true" android:networkSecurityConfig="@xml/network_security_config" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:requestLegacyExternalStorage="true">
+        <activity android:name="com.movie.ui.activity.sources.episodesPack.EpisodesActivity" android:parentActivityName="com.movie.ui.activity.sources.seasonPack.SeasonPackActivity"/>
+        <activity android:label="@string/title_activity_settings" android:name="com.movie.ui.activity.settings.SettingsActivity" android:parentActivityName="com.movie.ui.activity.MainActivity"/>
+        <activity android:name="com.movie.ui.activity.gamechallenge.GameChallenge"/>
+        <activity android:name="com.movie.ui.activity.payment.keyManager.KeyManager"/>
+        <activity android:name="com.movie.ui.activity.BarcodeActivity"/>
+        <activity android:theme="@style/Theme.PopularMovies.Base" android:label="@string/title_activity_help_recaptcha" android:name="com.movie.ui.activity.HelpRecaptchar"/>
+        <activity android:name="com.movie.ui.activity.TestCrappers"/>
+        <activity android:name="com.movie.ui.activity.payment.BitcoinGatewayActivity" android:screenOrientation="nosensor" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+        <activity android:name="com.movie.ui.activity.MemberActivationActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https" android:host="www.cinemahd.store"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.movie.ui.activity.shows.ShowActivity" android:exported="true" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:parentActivityName="com.movie.ui.activity.MainActivity"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:theme="@style/Theme.Splash" android:label="@string/app_name" android:name="com.movie.ui.activity.SplashActivity" android:exported="true" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.MULTIWINDOW_LAUNCHER"/>
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="VideoReWards" android:name="com.movie.ui.activity.AdsActivity"/>
+        <activity android:name="com.movie.ui.activity.MovieDetailsActivity" android:exported="true" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:parentActivityName="com.movie.ui.activity.MainActivity">
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"/>
+            <meta-data android:name="com.google.ar.core" android:value="required"/>
+        </activity>
+        <activity android:label="@string/title_calendar" android:name="com.movie.ui.activity.CalendarActivity" android:parentActivityName="com.movie.ui.activity.MainActivity"/>
+        <meta-data android:name="com.google.ar.core" android:value="required"/>
+        <meta-data android:name="class" android:value="@string/class_path"/>
+        <activity android:name="com.movie.ui.activity.sources.SourceActivity" android:exported="true" android:configChanges="orientation|screenLayout|screenSize" android:parentActivityName="com.movie.ui.activity.shows.ShowActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.movie.ui.activity.sources.seasonPack.SeasonPackActivity" android:exported="true" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:parentActivityName="com.movie.ui.activity.shows.ShowActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity"/>
+        <activity android:theme="@style/Theme.NoTitleBar.Fullscreen" android:name="com.google.android.gms.ads.AdActivity" android:exported="false" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+        <activity android:label="@string/app_name" android:name="com.utils.ExpandedControlsActivity" android:launchMode="singleInstance"/>
+        <provider android:name="androidx.core.content.FileProvider" android:exported="false" android:authorities="com.yoku.marumovie.provider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <service android:name="com.utils.installer.PackageInstallerService" android:exported="true" android:foregroundServiceType="1"/>
+        <service android:name="com.movie.data.remotejs.MyTaskService"/>
+        <service android:name="com.utils.MyUnboundService"/>
+        <service android:name="com.movie.data.sync.PopularMoviesAuthenticatorService" android:exported="true">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator"/>
+            </intent-filter>
+            <meta-data android:name="android.accounts.AccountAuthenticator" android:resource="@xml/authenticator"/>
+        </service>
+        <service android:name="com.movie.data.sync.PopularMoviesSyncService" android:exported="true">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter"/>
+            </intent-filter>
+            <meta-data android:name="android.content.SyncAdapter" android:resource="@xml/syncadapter"/>
+        </service>
+        <service android:name="com.utils.cast.LocalWebserver"/>
+        <meta-data android:name="com.movie.data.GlideSetup" android:value="GlideModule"/>
+        <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-4881714532467498~9370294694"/>
+        <meta-data android:name="com.google.android.gms.cast.framework.OPTIONS_PROVIDER_CLASS_NAME" android:value="com.utils.cast.CastOptionsProvider"/>
+        <activity android:theme="@style/Theme.Black.NoTitleBar.Fullscreen" android:name="com.adcolony.sdk.AdColonyInterstitialActivity" android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/Theme.Black.NoTitleBar.Fullscreen" android:name="com.adcolony.sdk.AdColonyAdViewActivity" android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/PlayerTheme" android:name="com.movie.ui.activity.player.PlayerActivity" android:exported="true" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:hardwareAccelerated="true">
+            <intent-filter>
+                <action android:name="com.google.android.exoplayer.demo.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:scheme="content"/>
+                <data android:scheme="asset"/>
+                <data android:scheme="file"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.exoplayer.demo.action.VIEW_LIST"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.utils.download.DownloadActivity" android:launchMode="singleTask"/>
+        <service android:name="us.shandian.giga.service.DownloadManagerService" android:foregroundServiceType="1"/>
+        <service android:name="com.google.android.exoplayer2.scheduler.PlatformScheduler$PlatformSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="true"/>
+        <activity android:label="@string/title_activity_main" android:name="com.movie.ui.activity.MainActivity" android:exported="true" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"/>
+        </activity>
+        <activity android:name="com.movie.ui.activity.RealDebridAuthWebViewActivity" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"/>
+        <activity android:name="com.movie.ui.activity.AllDebridAuthWebViewActivity" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"/>
+        <activity android:name="com.movie.ui.activity.TraktAuthWebViewActivity" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"/>
+        <activity android:theme="@style/FilePickerTheme" android:label="@string/app_name" android:name="com.nononsenseapps.filepicker.FilePickerActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.GET_CONTENT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <receiver android:label="@string/app_name" android:name="com.utils.seriesguide.ExampleExtensionReceiver" android:exported="true" android:description="@string/app_name">
+            <intent-filter>
+                <action android:name="com.battlelancer.seriesguide.api.SeriesGuideExtension"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.utils.seriesguide.ExampleExtensionService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="true"/>
+        <service android:label="@string/app_name" android:name="com.utils.seriesguide.ExampleExtension" android:enabled="true" android:exported="true" android:description="@string/app_name">
+            <intent-filter>
+                <action android:name="com.battlelancer.seriesguide.api.SeriesGuideExtension"/>
+            </intent-filter>
+        </service>
+        <activity android:name="com.movie.ui.activity.RecaptchaWebViewActivity" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"/>
+        <meta-data android:name="applovin.sdk.key" android:value="24_riDatI5254b1EXCxZuyWvXK8TKSe_AwT6H46MS77hW3idtPh0scWetkqwgvK-25r43v0-ROqqe077QVwIFe"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <provider android:name="com.extension.CinemaProvider" android:permission="com.domain.api.provider.ACCESS_PROVIDER" android:exported="true" android:authorities="com.yoku.marumovie.stream-provider">
+            <intent-filter>
+                <action android:name="com.domain.api.provider.StreamProvider"/>
+            </intent-filter>
+        </provider>
+        <activity android:theme="@style/Theme.NoTitleBar.Fullscreen" android:name="com.unity3d.services.ads.adunit.AdUnitActivity" android:exported="false" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar.Fullscreen" android:name="com.unity3d.services.ads.adunit.AdUnitTransparentActivity" android:exported="false" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar.Fullscreen" android:name="com.unity3d.services.ads.adunit.AdUnitTransparentSoftwareActivity" android:exported="false" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:hardwareAccelerated="false"/>
+        <activity android:theme="@style/Theme.NoTitleBar.Fullscreen" android:name="com.unity3d.services.ads.adunit.AdUnitSoftwareActivity" android:exported="false" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale" android:hardwareAccelerated="false"/>
+        <provider android:name="androidx.startup.InitializationProvider" android:exported="false" android:authorities="com.yoku.marumovie.androidx-startup">
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="com.unity3d.services.core.configuration.AdsSdkInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.work.WorkManagerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <property android:name="android.adservices.AD_SERVICES_CONFIG" android:resource="@xml/ad_services_config"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar.Fullscreen" android:name="com.chartboost.sdk.view.CBImpressionActivity" android:exported="false" android:excludeFromRecents="true" android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="true" android:enableOnBackInvokedCallback="true"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar.Fullscreen" android:name="com.chartboost.sdk.internal.clickthrough.EmbeddedBrowserActivity" android:exported="false" android:excludeFromRecents="true" android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="true"/>
+        <service android:name="com.chartboost.sdk.internal.video.repository.exoplayer.VideoRepositoryDownloadService" android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.android.exoplayer.downloadService.action.RESTART"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" android:value="GlideModule"/>
+        <activity android:name="com.vungle.ads.internal.ui.VungleActivity" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:hardwareAccelerated="true"/>
+        <activity android:theme="@style/Theme.NoTitleBar.Fullscreen" android:name="com.yoku.house.ads.HouseAdsInterstitial$InterstitialActivity"/>
+        <provider android:name="com.squareup.picasso.PicassoProvider" android:exported="false" android:authorities="com.yoku.marumovie.com.squareup.picasso"/>
+        <receiver android:name="com.google.android.gms.cast.framework.media.MediaIntentReceiver" android:exported="false"/>
+        <service android:name="com.google.android.gms.cast.framework.ReconnectionService" android:exported="false"/>
+        <activity android:name="com.facebook.ads.AudienceNetworkActivity" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <provider android:name="com.applovin.sdk.AppLovinInitProvider" android:exported="false" android:authorities="com.yoku.marumovie.applovincontentprovider" android:initOrder="101" android:grantUriPermissions="true"/>
+        <activity android:name="com.applovin.adview.AppLovinFullscreenActivity" android:exported="false" android:launchMode="singleTop" android:screenOrientation="behind" android:configChanges="locale|keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:hardwareAccelerated="true"/>
+        <activity android:name="com.applovin.sdk.AppLovinWebViewActivity" android:configChanges="keyboardHidden|orientation|uiMode|screenSize"/>
+        <activity android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme" android:name="com.applovin.mediation.MaxDebuggerActivity" android:configChanges="keyboardHidden|orientation|uiMode|screenSize"/>
+        <activity android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme" android:name="com.applovin.mediation.MaxDebuggerDetailActivity" android:configChanges="keyboardHidden|orientation|uiMode|screenSize"/>
+        <activity android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme" android:name="com.applovin.mediation.MaxDebuggerMultiAdActivity" android:configChanges="keyboardHidden|orientation|uiMode|screenSize"/>
+        <activity android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme" android:name="com.applovin.mediation.MaxDebuggerAdUnitsListActivity" android:configChanges="keyboardHidden|orientation|uiMode|screenSize"/>
+        <activity android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme" android:name="com.applovin.mediation.MaxDebuggerAdUnitDetailActivity" android:configChanges="keyboardHidden|orientation|uiMode|screenSize"/>
+        <activity android:theme="@style/com.applovin.mediation.MaxDebuggerActivity.Theme" android:name="com.applovin.mediation.MaxDebuggerTestLiveNetworkActivity" android:configChanges="keyboardHidden|orientation|uiMode|screenSize"/>
+        <service android:name="com.applovin.impl.sdk.utils.AppKilledService" android:exported="false" android:stopWithTask="false"/>
+        <service android:name="com.applovin.impl.adview.activity.FullscreenAdService" android:exported="false" android:stopWithTask="false"/>
+        <provider android:name="com.google.android.gms.ads.MobileAdsInitProvider" android:exported="false" android:authorities="com.yoku.marumovie.mobileadsinitprovider" android:initOrder="100"/>
+        <service android:name="com.google.android.gms.ads.AdService" android:enabled="true" android:exported="false"/>
+        <activity android:name="com.google.android.gms.ads.OutOfContextTestingActivity" android:exported="false" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:exported="false" android:excludeFromRecents="true"/>
+        <service android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:exported="true" android:visibleToInstantApps="true"/>
+        <activity android:theme="@style/Theme.Translucent.NoTitleBar" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:exported="false"/>
+        <provider android:name="com.startapp.sdk.adsbase.StartAppInitProvider" android:exported="false" android:authorities="com.yoku.marumovie.startappinitprovider"/>
+        <activity android:theme="@style/Theme.Translucent" android:name="com.startapp.sdk.adsbase.consent.ConsentActivity" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"/>
+        <activity android:theme="@style/Theme" android:name="com.startapp.sdk.ads.list3d.List3DActivity"/>
+        <activity android:theme="@style/Theme.Translucent" android:name="com.startapp.sdk.ads.interstitials.OverlayActivity" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"/>
+        <service android:name="com.startapp.sdk.cachedservice.BackgroundService"/>
+        <service android:name="com.startapp.sdk.jobs.SchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:name="com.startapp.sdk.adsbase.remoteconfig.BootCompleteListener" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="androidx.work.impl.background.systemalarm.SystemAlarmService" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:directBootAware="false"/>
+        <service android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:directBootAware="false"/>
+        <service android:name="androidx.work.impl.foreground.SystemForegroundService" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:directBootAware="false"/>
+        <receiver android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver" android:enabled="true" android:exported="false" android:directBootAware="false"/>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver" android:enabled="false" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP" android:enabled="true" android:exported="true" android:directBootAware="false">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="androidx.room.MultiInstanceInvalidationService" android:exported="false" android:directBootAware="true"/>
+        <meta-data android:name="com.google.ar.core.min_apk_version" android:value="231000000"/>
+        <activity android:theme="@style/Theme.Material.Light.Dialog.Alert" android:name="com.google.ar.core.InstallActivity" android:exported="false" android:excludeFromRecents="true" android:launchMode="singleTop" android:configChanges="keyboardHidden|orientation|screenSize"/>
+        <service android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery" android:exported="false">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="false"/>
+        <receiver android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver" android:exported="false"/>
+    </application>
+</manifest>

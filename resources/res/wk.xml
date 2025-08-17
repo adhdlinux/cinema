@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/root_view" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ProgressBar android:id="@+id/loading" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_anchor="@+id/viewpage"/>
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageButton android:id="@+id/ImgBtnrevertIndex" android:background="@drawable/episodes_reverse_highlight" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_marginLeft="3dp" android:layout_marginStart="3dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:srcCompat="@drawable/exo_controls_repeat_all"/>
+            <com.movie.ui.widget.SlidingTabLayout android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:gravity="center" android:id="@+id/tablayout" android:background="?attr/colorPrimary" android:layout_width="0dp" android:layout_height="wrap_content" android:minHeight="?attr/actionBarSize" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toEndOf="@+id/ImgBtnrevertIndex" app:layout_constraintTop_toTopOf="0" app:tabGravity="0"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.viewpager.widget.ViewPager android:id="@+id/viewpage" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

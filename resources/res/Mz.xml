@@ -1,0 +1,1216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<changelog>
+
+    <changelogversion
+        changeDate="Oct 17, 2024"
+        versionName="3.4.1">
+        <changelogtext>
+            [[b][font color=red]GoogleCast[/font][/b]] Supports more subtitles and more streams.
+        </changelogtext>
+        <changelogtext>
+            [[b][font color=red]Bugs[/font][/b]] Fixed crashing on Android 14, can't delete trakt list on firestick and tv-box
+        </changelogtext>
+        <changelogtext>
+            [[b][font color=yellow]Streams[/font][/b]] Fixed issues with some providers and resolvers.
+        </changelogtext>
+    </changelogversion>
+
+    <changelogversion
+        changeDate="Oct 9, 2024"
+        versionName="3.4.0">
+        <changelogtext>
+            [[b][font color=yellow]Subtitle[/font][/b]] Filter subtitle providers for each supported player (for example, subtitle providers offering URLs with zip files for external players will not appear in the subtitle dialog result)
+        </changelogtext>
+        <changelogtext>
+            [[b][font color=red]Bugs[/font][/b]] Apply some optimized code for the gray/black/freeze screen issue on Android TV.
+        </changelogtext>
+    </changelogversion>
+
+    <changelogversion
+        changeDate="Oct 2, 2024"
+        versionName="3.3.4">
+        <changelogtext>
+            [[b][font color=yellow]Hot-fix[/font][/b]] Fixed issue where the stream link couldn't be changed when playing with subtitles.
+        </changelogtext>
+    </changelogversion>
+
+    <changelogversion
+        changeDate="Sep 27, 2024"
+        versionName="3.3.3">
+        <changelogtext>
+            [[b][font color=yellow]Player[/font][/b]] Improved built-in player UI. Updated CSPlayer to 1.0.6 with support for multiple formats, auto play all episodes from the season pack (Long click season to load season pack with RD/AD/PM account).
+        </changelogtext>
+        <changelogtext>
+            [[b][font color=yellow]Trakt[/font][/b]] Updated the delete Trakt list option. It will now delete the list from both local storage and Trakt. Fixed bug: tvShow backdrop not showing when switch to Trakt source.
+        </changelogtext>
+        <changelogtext>
+            [[b][font color=yellow]UI/UX[/font][/b]] Saved the latest state of Favorites and History. Legacy file picker used for Android TV.
+        </changelogtext>
+        <changelogtext>
+            [[b][font color=yellow]Streams[/font][/b]] Fixed missing links in some movies and TV shows, Fixed some providers and resolvers.
+        </changelogtext>
+    </changelogversion>
+
+    <changelogversion
+        changeDate="Step 18, 2024"
+        versionName="3.3.2">
+        <changelogtext>
+            Fixed bug: Screen saver turns on during Built-In Player playback.
+        </changelogtext>
+        <changelogtext>
+            Improved focus navigation on the Favorites page.
+        </changelogtext>
+        <changelogtext>
+            Fixed intermittent issue with the play function not working.
+        </changelogtext>
+        <changelogtext>
+            Limited the request for storage permission to when it is needed.
+        </changelogtext>
+        <changelogtext>
+            Fixed and added many providers and resolvers.
+        </changelogtext>
+    </changelogversion>
+
+<!--    <changelogversion-->
+<!--        changeDate="Aug 31, 2024"-->
+<!--        versionName="3.3.0">-->
+<!--        <changelogtext>-->
+<!--            Sort My List by Rank or Last Added options.-->
+<!--        </changelogtext>-->
+<!--        <changelogtext>-->
+<!--            Migrate from ExoPlayer to Media3, bring back the startOver/resume feature, and merge download subtitle with embedded subtitle.-->
+<!--        </changelogtext>-->
+<!--        <changelogtext>-->
+<!--            Fixed and added many providers and resolvers.-->
+<!--        </changelogtext>-->
+<!--        <changelogtext>-->
+<!--            Fixes bugs: Clicking a torrent crashes the app, Zooqle provider not be able to pick out the required episode file-->
+<!--        </changelogtext>-->
+<!--    </changelogversion>-->
+
+
+<!--    <changelogversion-->
+<!--        changeDate="Aug 24, 2024"-->
+<!--        versionName="3.2.1">-->
+<!--        <changelogtext>-->
+<!--            Fixed a bug: Cannot see your own private list.-->
+<!--        </changelogtext>-->
+<!--    </changelogversion>-->
+
+<!--    <changelogversion-->
+<!--        changeDate="Aug 22, 2024"-->
+<!--        versionName="3.2.0">-->
+<!--        <changelogtext>-->
+<!--            Add option: Filter non-English movies/tvShows.-->
+<!--        </changelogtext>-->
+<!--        <changelogtext>-->
+<!--            Manage trakt list by MyList-->
+<!--        </changelogtext>-->
+<!--        <changelogtext>-->
+<!--            Fixed providers and resolvers.-->
+<!--        </changelogtext>-->
+<!--        <changelogtext>-->
+<!--            Fixed a bug: The built-in player was sending the 'watch' event to Trakt multiple times.-->
+<!--        </changelogtext>-->
+<!--    </changelogversion>-->
+
+<!--    <changelogversion-->
+<!--        changeDate="Jul 4, 2024"-->
+<!--        versionName="3.1.1">-->
+<!--        <changelogtext>-->
+<!--            Optimize performance.-->
+<!--        </changelogtext>-->
+<!--        <changelogtext>-->
+<!--            Fix bugs: real-debrid 404 error.-->
+<!--        </changelogtext>-->
+<!--        <changelogtext>-->
+<!--            Fix CSPlayer to play certain links.-->
+<!--        </changelogtext>-->
+<!--    </changelogversion>-->
+<!--    <changelogversion-->
+<!--        changeDate="Jun 27, 2024"-->
+<!--        versionName="3.1.0">-->
+<!--        <changelogtext>-->
+<!--            Removed Cleaf player, added CSPlayer.-->
+<!--        </changelogtext>-->
+<!--        <changelogtext>-->
+<!--            Fixed and added many providers and resolvers.-->
+<!--        </changelogtext>-->
+<!--        <changelogtext>-->
+<!--            Added option to change direct player in load stream scene.-->
+<!--        </changelogtext>-->
+<!--        <changelogtext>-->
+<!--            Fixes bugs : Zooqle provider not be able to pick out the required episode file-->
+<!--        </changelogtext>-->
+<!--        <changelogtext>-->
+<!--            Optimized subtitles and fixed subtitle login issue.-->
+<!--        </changelogtext>-->
+<!--        <changelogtext>-->
+<!--            Play all episodes from the season pack using CSPlayer, available only with premium services. Long press on the season to load the season pack.-->
+<!--        </changelogtext>-->
+<!--    </changelogversion>-->
+
+<!--    <changelogversion-->
+<!--        changeDate="May 19, 2024"-->
+<!--        versionName="3.0.9">-->
+<!--        <changelogtext>-->
+<!--            Fixed and added many providers and resolvers. Filtered unplayable streams.-->
+<!--        </changelogtext>-->
+<!--        <changelogtext>-->
+<!--            Optimized built-in player: supports more audio and video formats.-->
+<!--        </changelogtext>-->
+<!--        <changelogtext>-->
+<!--            Fixed bug : Resume popup always shows when playing an episode.-->
+<!--        </changelogtext>-->
+<!--        <changelogtext>-->
+<!--            Fixed bug: App gets stuck on a grey screen when returning from the player.-->
+<!--        </changelogtext>-->
+<!--    </changelogversion>-->
+
+<!--    <changelogversion-->
+<!--        changeDate="May 13, 2024"-->
+<!--        versionName="3.0.7">-->
+<!--        <changelogtext>-->
+<!--            [b][font color=red]Bug Fixed![/font][/b] Built-in player not working on some HLS links.-->
+<!--        </changelogtext>-->
+<!--        <changelogtext>-->
+<!--            [b][font color=red]New![/font][/b] Pay with Bitcoin to remove the ad.-->
+<!--        </changelogtext>-->
+<!--        <changelogtext>-->
+<!--            Fixed issues many providers and resolvers.-->
+<!--        </changelogtext>-->
+<!--    </changelogversion>-->
+
+<!--    <changelogversion-->
+<!--        changeDate="Apr 16, 2024"-->
+<!--        versionName="3.0.6">-->
+<!--        <changelogtext>-->
+<!--            Fixes related to downloading videos, and backup/restore storage.-->
+<!--        </changelogtext>-->
+<!--        <changelogtext>-->
+<!--            Fixed issues with several providers and resolvers.-->
+<!--        </changelogtext>-->
+<!--        <changelogtext>-->
+<!--            Optimized subtitles, fixed subtitle focus, and improved download dialog on Android TV.-->
+<!--        </changelogtext>-->
+<!--    </changelogversion>-->
+
+<!--    <changelogversion-->
+<!--        changeDate="Apr 9, 2024"-->
+<!--        versionName="3.0.5">-->
+<!--        <changelogtext>-->
+<!--            Fixed issues with several providers and resolvers.-->
+<!--        </changelogtext>-->
+<!--    </changelogversion>-->
+
+<!--    <changelogversion-->
+<!--        changeDate="Apr 4, 2024"-->
+<!--        versionName="3.0.4">-->
+<!--        <changelogtext>-->
+<!--            [b][font color=red]Bug Fixed![/font][/b] Can't logout OpenSubtitles account-->
+<!--        </changelogtext>-->
+<!--        <changelogtext>-->
+<!--            Optimize performance.-->
+<!--        </changelogtext>-->
+<!--        <changelogtext>-->
+<!--            Fixed issues with several providers and resolvers.-->
+<!--        </changelogtext>-->
+<!--    </changelogversion>-->
+
+<!--    <changelogversion-->
+<!--        changeDate="Mar 26, 2024"-->
+<!--        versionName="3.0.3">-->
+<!--        <changelogtext>-->
+<!--            [b][font color=red]Bug Fixed![/font][/b] Season packs aren't loading.-->
+<!--        </changelogtext>-->
+<!--        <changelogtext>-->
+<!--            [b][font color=red]Bug Fixed![/font][/b] Resolved issue where search links were-->
+<!--            persisting after switching to a different search query.-->
+<!--        </changelogtext>-->
+<!--        <changelogtext>-->
+<!--            Fixed issues with several providers and resolvers.-->
+<!--        </changelogtext>-->
+<!--    </changelogversion>-->
+
+<!--    <changelogversion-->
+<!--        changeDate="Mar 17, 2024"-->
+<!--        versionName="3.0.1">-->
+<!--        <changelogtext>-->
+<!--            Fix crash on new Android TV OS.-->
+<!--        </changelogtext>-->
+<!--        <changelogtext>-->
+<!--            Show confirm dialog when user exits Built-in Player.-->
+<!--        </changelogtext>-->
+<!--        <changelogtext>-->
+<!--            [b][font color=red]Bug Fixed![/font][/b]: Can't search TV/show in Trakt source.-->
+<!--        </changelogtext>-->
+<!--        <changelogtext>-->
+<!--            [b][font color=red]Bug Fixed![/font][/b]: Fixed bug: Unable to download subtitles.-->
+<!--        </changelogtext>-->
+<!--        <changelogtext>-->
+<!--            Fixed issues with several providers and resolvers.-->
+<!--        </changelogtext>-->
+<!--        <changelogtext>-->
+<!--            Remove RealDebrid caching.-->
+<!--        </changelogtext>-->
+<!--    </changelogversion>-->
+
+<!--    <changelogversion-->
+<!--        changeDate="Mar 8, 2024"-->
+<!--        versionName="3.0.0">-->
+<!--        <changelogtext>-->
+<!--            Save last backup file path.-->
+<!--        </changelogtext>-->
+<!--        <changelogtext>-->
+<!--            Fixed issues with several providers and resolvers-->
+<!--        </changelogtext>-->
+<!--    </changelogversion>-->
+
+<!--    <changelogversion-->
+<!--        changeDate="Oct 17, 2023"-->
+<!--        versionName="2.6.1">-->
+<!--        <changelogtext>-->
+<!--            Fixed issues with several providers and resolvers-->
+<!--        </changelogtext>-->
+<!--    </changelogversion>-->
+
+<!--    <changelogversion-->
+<!--        changeDate="Sep 7, 2023"-->
+<!--        versionName="2.6.0">-->
+<!--        <changelogtext>-->
+<!--            Bug fixes: Crash when click on UserTorrent links-->
+<!--        </changelogtext>-->
+<!--        <changelogtext>-->
+<!--            Add SStream, a fast and reliable hls provider.-->
+<!--        </changelogtext>-->
+<!--        <changelogtext>-->
+<!--            Mute all ads. Bug fixes: Prevented random ads from appearing on the first launch.-->
+<!--        </changelogtext>-->
+<!--        <changelogtext>-->
+<!--            Improve Cinema PLayer-->
+<!--        </changelogtext>-->
+<!--        <changelogtext>-->
+<!--            Update the caching policies for HTTP responses. Reduce the frequency of clearing the-->
+<!--            cache.-->
+<!--        </changelogtext>-->
+<!--    </changelogversion>-->
+
+<!--    <changelogversion-->
+<!--        changeDate="May 26, 2023"-->
+<!--        versionName="2.5.2">-->
+<!--        <changelogtext>-->
+<!--            Reduce ads in Amazon device.-->
+<!--        </changelogtext>-->
+<!--        <changelogtext>-->
+<!--            Fixed bug: Can't exit app.-->
+<!--        </changelogtext>-->
+<!--    </changelogversion>-->
+
+<!--    <changelogversion-->
+<!--        changeDate="May 16, 2023"-->
+<!--        versionName="2.5.1">-->
+<!--        <changelogtext>-->
+<!--            Fixed issues with several providers and resolvers-->
+<!--        </changelogtext>-->
+<!--        <changelogtext>-->
+<!--            Fixed bug: unable to resume playback in MX/VLC player-->
+<!--        </changelogtext>-->
+<!--        <changelogtext>-->
+<!--            Fixed bug: the tvShow Recommendations tab would not load.-->
+<!--        </changelogtext>-->
+<!--        <changelogtext>-->
+<!--            Added Backup/Restore for Android 11+. Overriding the update will preserve old data.-->
+<!--        </changelogtext>-->
+<!--    </changelogversion>-->
+
+<!--    <changelogversion-->
+<!--        changeDate="Jul 27, 2021"-->
+<!--        versionName="2.4.0">-->
+<!--        <changelogtext>-->
+<!--            Added more categories, including Trakt's featured lists-->
+<!--        </changelogtext>-->
+<!--    </changelogversion>-->
+<!--    <changelogversion-->
+<!--        changeDate="Jul 10, 2021"-->
+<!--        versionName="2.3.7.4">-->
+<!--        <changelogtext>-->
+<!--            Updated network list-->
+<!--        </changelogtext>-->
+<!--    </changelogversion>-->
+<!--    <changelogversion-->
+<!--        changeDate="Jun 3, 2021"-->
+<!--        versionName="2.3.7.3">-->
+<!--        <changelogtext>-->
+<!--            Added support for season packs on RealDebrid, AllDebrid, and Premiumize (long press a-->
+<!--            season to enter the Season Pack screen)-->
+<!--        </changelogtext>-->
+<!--        <changelogtext>-->
+<!--            Fixed issues with several providers-->
+<!--        </changelogtext>-->
+<!--    </changelogversion>-->
+    <!--    <changelogversion-->
+    <!--        changeDate="Apr 22,2021"-->
+    <!--        versionName="2.3.7">-->
+    <!--        <changelogtext>-->
+    <!--            Add option Sync trakt only-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>-->
+    <!--            Fixed bugs: Favorites not syncing with Trakt properly-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>-->
+    <!--            Remove OnlyStream-->
+    <!--        </changelogtext>-->
+    <!--    </changelogversion>-->
+
+    <!--    <changelogversion-->
+    <!--        changeDate="Feb 21,2021"-->
+    <!--        versionName="2.3.6.1">-->
+    <!--        <changelogtext>-->
+    <!--            Remove many wrong links.-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>-->
+    <!--            Show User cached torrents in Link list screen.-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>-->
+    <!--            Fixed backup/restore, History can't sort newest watched at the top.-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>-->
+    <!--            Fixed issue: less link related to zeroTV, load more cached-torrent links-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>-->
+    <!--            Remove option "Use Trakt data only" because app haven't sync watched position from trakt api yet.-->
+    <!--        </changelogtext>-->
+    <!--    </changelogversion>-->
+
+    <!--    <changelogversion-->
+    <!--        changeDate="Jan 31,2021"-->
+    <!--        versionName="2.3.5">-->
+    <!--        <changelogtext>-->
+    <!--            Remove Limit request to premium server option-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>-->
+    <!--            Turn off reolve premium links option as Default-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>-->
+    <!--            Optimize Source Code-->
+    <!--        </changelogtext>-->
+    <!--    </changelogversion>-->
+    <!--    <changelogversion-->
+    <!--        changeDate="Jan 26,2021"-->
+    <!--        versionName="2.3.4">-->
+    <!--        <changelogtext>-->
+    <!--            [b][font color=red]New![/font][/b]Remake Settings Screen-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>-->
+    <!--            Resolve premium link to corrected file name by longpress.-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>-->
+    <!--            Add option to show default opening screen [tv/Show, Movies, Favorites, History]-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>-->
+    <!--            Add option : Adjust the watched time to save history and sync to trakt (don't apply for open with.. or casting).-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext> Make Resume Popup cancelable.-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>-->
+    <!--            Add back the option to sort favourites by last watched-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext> Fixed bug : App crashed/force when play movie from SeriesGuide-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext> Add option: sync trakt at Startup-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext> Add option: show File Name if available-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>Fixed bug : "show aired episodes only" isn't hiding unaired when checked-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>Fixed bug: No link found when play some Shows from Serial Guide because App show wrong title.-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>Add the option "Keep service alive in background" to fix background-service on Android 8.0 above.-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>Update providers, add MstreamTo resolver.-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>Mute ads as default, limit ads show every some minutes.-->
+    <!--        </changelogtext>-->
+
+    <!--    </changelogversion>-->
+
+    <!--    <changelogversion-->
+    <!--        changeDate="Dec 9,2020"-->
+    <!--        versionName="2.3.1">-->
+    <!--        <changelogtext>Remove Novel Ads Banner-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>Add option to turn off auto generate background color-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>Remove bad links.-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>Fixed bugs : Can't focus torrent item in Torrent Manager on FireStick-->
+    <!--        </changelogtext>-->
+    <!--    </changelogversion>-->
+
+    <!--    <changelogversion-->
+    <!--        changeDate="Dec 7,2020"-->
+    <!--        versionName="2.3.0">-->
+    <!--        <changelogtext>[b][font color=red]New![/font][/b] use password to restrict categories or to-->
+    <!--            deny searching-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>[b][font color=red]New![/font][/b] Add option : Show season specials-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>-->
+    <!--            Fixed bug : Favourites can't be switched from TV-Movies-All using an air mouse, only-->
+    <!--            with remotes-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>-->
+    <!--            Fixed bug : RD links not getting picked up on first few searches-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>[b][font color=red]New![/font][/b] Add Torrent manager-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>Fixed bug : canot focus user Torrents on android tv-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>[b][font color=red]New![/font][/b]Movie detail layout-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>Fixed RD login.-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>Fixed bug : Trakt sync cannot complete-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>Fixed bug : Crash on Android 5.x-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>Fixed many providers-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>Optimize source-->
+    <!--        </changelogtext>-->
+    <!--    </changelogversion>-->
+
+    <!--    <changelogversion-->
+    <!--        changeDate="Aug 14,2020"-->
+    <!--        versionName="2.2.3">-->
+    <!--        <changelogtext>Fixed subtitle-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>Fixed crash for some android-tv-boxs, if you still get crashing please install Analytics Apk on website to help us find out the issue .-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>Fixed many providers-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>Add filter out CAM option-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>[b][font color=red]New![/font][/b] Adding 'multiple keys option' in BTC payment.-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>[b][font color=red]New![/font][/b] Add options : Fetch episodes from theTvdb-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>[b][font color=red]New![/font][/b] Separate tvShows/Movies/All favourite lists-->
+    <!--        </changelogtext>-->
+    <!--    </changelogversion>-->
+
+    <!--    <changelogversion-->
+    <!--        changeDate="July 17,2020"-->
+    <!--        versionName="2.2.2">-->
+    <!--        <changelogtext>Fixed bug : Cached TMDB not working.-->
+    <!--        </changelogtext>-->
+    <!--    </changelogversion>-->
+
+    <!--    <changelogversion-->
+    <!--        changeDate="Jun 27,2020"-->
+    <!--        versionName="2.2.1">-->
+    <!--        <changelogtext>[b][font color=red]New![/font][/b]Use cached database if TMDB not working.-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>Fixed bug : wrong link and subtitle for SerialGuide users.-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>Fixed providers : CMovies, PLockerSK, Pubfilm, SeriesNine, DaxivMovies, SolarMoviez.-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>Fixed resolvers : Fembed, UpStream, P2PCDN, Movcloud.-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>Add premium providers: DailyMotion, Dailyupload, down4files, FileUp, UploadGig.-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>by pass new cloudflare-->
+    <!--        </changelogtext>-->
+    <!--    </changelogversion>-->
+    <!--    <changelogversion-->
+    <!--        changeDate="May 21,2020"-->
+    <!--        versionName="2.2.0">-->
+    <!--        <changelogtext>Fixed bug : wrong link and subtitle for SerialGuide users.-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>Fixed a lot of providers.-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>Update ZeroTV-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>Renew TMDB api key.-->
+    <!--        </changelogtext>-->
+    <!--    </changelogversion>-->
+
+    <!--    <changelogversion-->
+    <!--        changeDate="Apr 26,2020"-->
+    <!--        versionName="2.1.9.1 hotfix">-->
+    <!--        <changelogtext>Fixed bug : AllDebrid can't resolve files over 2.1GB.-->
+    <!--        </changelogtext>-->
+    <!--    </changelogversion>-->
+    <!--    <changelogversion-->
+    <!--        changeDate="Apr 25,2020"-->
+    <!--        versionName="2.1.9">-->
+    <!--        <changelogtext>Fixed Bug : no RD link on some Firestick devices-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>Update AllDebrid to v4-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>-->
+    <!--            Fixed providers : ClickMovies, HDMovies, P2PCDN, AfdahTV, Zooqle, Earn4files...-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>-->
+    <!--            Fixed resolvers : JetLoad, Vidlox, VidTodo, VupTo, Streamwire, Earn4files-->
+    <!--        </changelogtext>-->
+    <!--    </changelogversion>-->
+
+    <!--    <changelogversion-->
+    <!--        changeDate="Mar 27,2020"-->
+    <!--        versionName="2.1.8.1">-->
+    <!--        <changelogtext>Fixed subtitle for some tvShows-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>Add option : Login Realdebrid, AllDebrid, Trakt as TV mode-->
+    <!--        </changelogtext>-->
+    <!--    </changelogversion>-->
+
+    <!--    <changelogversion-->
+    <!--        changeDate="Mar 27,2020"-->
+    <!--        versionName="2.1.8">-->
+    <!--        <changelogtext>[b][font color=red]New![/font][/b] Add backup/restore feature.-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>Added resolvers: ABCvideo, Supervideo, Anavids, Eplayvid-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>Fixed resolvers: Vidlox, Fembed-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>Fixed providers: OneMovie, BobMovies, OnPutlocker, Pubfilm, VexMovies,-->
+    <!--            DropApk-->
+    <!--            AfdahTV-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>Add providers: KickassTorrents, Eztv-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>Update recaptcha, OpenSubtitle-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>Add option : Long press stream link to show file name-->
+    <!--        </changelogtext>-->
+    <!--    </changelogversion>-->
+    <!--    <changelogversion-->
+    <!--        changeDate="Feb 22,2020"-->
+    <!--        versionName="2.1.7">-->
+    <!--        <changelogtext>Fixed providers:-->
+    <!--            AnimeTop, GoGoMovies, M4UFree, PlockerSK, SeeHD, TTmediatv, VexMovies, YesGG,-->
+    <!--            FlixanityBased, TTMediatv, Pubfilm-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>Fixed resolvers: Fembed, HydraX, MixDrop, Prostream, Vidbull, VidTodo, Fembed-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>Added resolver: ClubPlay, MCloud, DDLTO-->
+    <!--        </changelogtext>-->
+
+    <!--    </changelogversion>-->
+
+    <!--    <changelogversion-->
+    <!--        changeDate="Jan 22,2020"-->
+    <!--        versionName="2.1.6">-->
+    <!--        <changelogtext>Fixed bugs : some sites can't verify recaptcha.-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>Fixed providers:-->
+    <!--            Afdah,DaxivMovies,DDLValley,Dizigold,Filmxy,KKMovies,Movies25V2,ReleaseBB,SolarMoviez,SwatchSeries,TwoDDL,TYSee,Xmovies8,YesMovies-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>Fixed resolvers: Fembed,HydraX,Nofile,VidMoly-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>Added providers: HD7Movies, HDNext-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>Added resolver: Gdriver, Postream, VideoBin-->
+    <!--        </changelogtext>-->
+    <!--    </changelogversion>-->
+
+    <!--    <changelogversion-->
+    <!--        changeDate="Nov 28,2019"-->
+    <!--        versionName="2.1.5">-->
+    <!--        <changelogtext>Fixed bugs : recaptcha shows a forbidden error.-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>Optimize sources-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>Fixed some providers-->
+    <!--        </changelogtext>-->
+    <!--    </changelogversion>-->
+
+    <!--    <changelogversion-->
+    <!--        changeDate="Nov 22,2019"-->
+    <!--        versionName="2.1.4">-->
+    <!--        <changelogtext>Fixed bug: some RD Link can't play.-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>[b][font color=red]New![/font][/b] Add Member Key manager-->
+    <!--        </changelogtext>-->
+    <!--    </changelogversion>-->
+
+    <!--        <changelogversion-->
+    <!--            changeDate="Nov 21,2019"-->
+    <!--            versionName="2.1.3">-->
+    <!--            <changelogtext>[b][font color=red]New![/font][/b] Adding torrents to user's RD account.-->
+    <!--            </changelogtext>-->
+    <!--            <changelogtext>Fixed bug: crash on Fire TV Cube-->
+    <!--            </changelogtext>-->
+    <!--            <changelogtext>Fixed bug: RealDebrid AccessToken dosen't renew.-->
+    <!--            </changelogtext>-->
+    <!--            <changelogtext>Fixed bug: reslove recaptcha crash if list of recaptcha scapper is empty.-->
+    <!--            </changelogtext>-->
+    <!--            <changelogtext>Remove YesPlayer, Add CLeaf Player-->
+    <!--            </changelogtext>-->
+    <!--            <changelogtext>Fixed providers and resolver : StreamXPlayer,TopEuroPix, TwoDDL LIME,-->
+    <!--                FMovieCloud,-->
+    <!--                Clipwatching, Gounlimited, Hydra, GCLoud, GoVid-->
+    <!--            </changelogtext>-->
+    <!--            <changelogtext>[b][font color=red]New![/font][/b] Add beta Plugin player. You must install-->
+    <!--                PluginPlayer apk on your target device.-->
+    <!--            </changelogtext>-->
+    <!--        </changelogversion>-->
+
+    <!--        <changelogversion-->
+    <!--            changeDate="Oct 16,2019"-->
+    <!--            versionName="2.1.2">-->
+    <!--            <changelogtext>Fixed providers : YSMovies, TwoPutlocker, MovieFileHD, AZMovies, BestFlix,-->
+    <!--                WatchMovieHD, Afdah, M4UFree, OnePutlocker, Xmovies8, Dizigold, Dizist, Senzonlukdizi,-->
+    <!--                SwatchSeries...-->
+    <!--            </changelogtext>-->
+    <!--            <changelogtext>[b][font color=red]New![/font][/b] Add webview to resolve recaptcha.-->
+    <!--            </changelogtext>-->
+    <!--            <changelogtext>Fixed battery drain issue on some samsung devices-->
+    <!--            </changelogtext>-->
+    <!--            <changelogtext>Delete old apk after update-->
+    <!--            </changelogtext>-->
+    <!--        </changelogversion>-->
+
+    <!--    <changelogversion-->
+    <!--        changeDate="Aug 30,2019"-->
+    <!--        versionName="2.1.1">-->
+    <!--        <changelogtext>Fixed DVD Release Category loading-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>Fixed OpenSubtitle-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>Fixed YouTube™ Red, Hulu™, Amazon™, Netflix™ List,-->
+    <!--        </changelogtext>-->
+    <!--    </changelogversion>-->
+
+    <!--    <changelogversion-->
+    <!--        changeDate="Aug 24,2019"-->
+    <!--        versionName="2.0.9">-->
+    <!--        <changelogtext>[b][font color=red]New![/font][/b] Load data from TVDB,IMDB,TRAKT when TMDB-->
+    <!--            down.-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>[b][font color=red]New![/font][/b] Add DVD release category.-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>Show full season description, layout overview text.-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>Fixed providers: GoFilms, PFTV, ZeroTV for premium account-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>Add providers: SRLS, CBB, KRMovies,-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>Fixed Resolvers: RapidVideo-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>Add Resolvers: HdTV, GamoVideo, StreamTv, Mediafire, MegaZN, VK. ZTONet,-->
+    <!--            MyCould, SenditCloud, DebCached-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>Fixed bug : battery consumption issue of internal player.-->
+    <!--        </changelogtext>-->
+    <!--    </changelogversion>-->
+
+    <!--    <changelogversion-->
+    <!--        changeDate="Aug 3,2019"-->
+    <!--        versionName="2.0.8">-->
+    <!--        <changelogtext>Fixed bug: Launcher icon fill out in Shield Experience 8-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>Fixed bug: Error popup show when using Cinema extension in SeriesGuide-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>Fixed bug: Overview tab not always working on some tvShows-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>Fixed bug: not able to enable/disable subtitles while using the Cinema Play-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>Fix some providers-->
+    <!--        </changelogtext>-->
+    <!--    </changelogversion>-->
+
+    <!--    <changelogversion-->
+    <!--        changeDate="Jul 8,2019"-->
+    <!--        versionName="2.0.7_update_2">-->
+    <!--        <changelogtext>Fixed bug : doesn't mark as watched automatically in tvShow-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>Fixed ReleaseBB2,Torrent4k,FixOne providers-->
+    <!--        </changelogtext>-->
+    <!--    </changelogversion>-->
+
+    <!--    <changelogversion-->
+    <!--        changeDate="Jul 8,2019"-->
+    <!--        versionName="2.0.7_update_1">-->
+    <!--        <changelogtext>Fixed crash issue-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>Save member code to device's stograge-->
+    <!--        </changelogtext>-->
+    <!--        <changelogtext>Add ReleaseBB2,Torrent4k,FixOne providers-->
+    <!--        </changelogtext>-->
+    <!--    </changelogversion>-->
+
+    <!--<changelogversion-->
+    <!--changeDate="Jul 6,2019"-->
+    <!--versionName="2.0.7">-->
+    <!--<changelogtext>Sync watched movie/tvShow with serires-guide, external player-->
+    <!--</changelogtext>-->
+    <!--<changelogtext>Fixed turn off resolve immediately premium links (RD,PM,AD). Enable this-->
+    <!--function to reduce requests to premium services and cleaning up Download History in your-->
+    <!--account.-->
+    <!--</changelogtext>-->
+    <!--<changelogtext>Optimize auto play-next-->
+    <!--</changelogtext>-->
+    <!--<changelogtext>Fix and add more providers,resolvers.-->
+    <!--</changelogtext>-->
+    <!--</changelogversion>-->
+
+    <!--<changelogversion-->
+    <!--changeDate="Jun 22,2019"-->
+    <!--versionName="2.0.6">-->
+    <!--<changelogtext>Add resume function for MX,VLC player.-->
+    <!--</changelogtext>-->
+    <!--<changelogtext>Fixed bug : different number of subbtiles in cinema player than using "play-->
+    <!--with"-->
+    <!--</changelogtext>-->
+    <!--<changelogtext>Add clear cache, turn off resolve premium links options-->
+    <!--</changelogtext>-->
+    <!--</changelogversion>-->
+
+    <!--<changelogversion-->
+    <!--changeDate="Jun 22,2019"-->
+    <!--versionName="2.0.5">-->
+    <!--<changelogtext>Fixed many providers, add amazone reslover-->
+    <!--</changelogtext>-->
+    <!--<changelogtext>Update Zerotv for membership, deactivate device from membercode, fix member-->
+    <!--code issue on some devices-->
+    <!--</changelogtext>-->
+    <!--<changelogtext>Display stream count for tvShow-->
+    <!--</changelogtext>-->
+    <!--</changelogversion>-->
+
+
+    <!--<changelogversion-->
+    <!--changeDate="Jun 10,2019"-->
+    <!--versionName="2.0.4">-->
+    <!--<changelogtext>[b][font color=red]New![/font][/b] Add Premiumize</changelogtext>-->
+    <!--<changelogtext>[b][font color=red]New![/font][/b] Free Cached Torrent as default for premium-->
+    <!--account(Real Debrid, All Debrid, Premiumize)-->
+    <!--</changelogtext>-->
+    <!--<changelogtext>Fixbug : member key not remove ads on some devices (The new key will send to-->
+    <!--mail for paid user)-->
+    <!--</changelogtext>-->
+    <!--<changelogtext>Fixedbug : History tab not working-->
+    <!--</changelogtext>-->
+    <!--</changelogversion>-->
+
+    <!--<changelogversion-->
+    <!--changeDate="Jun 8,2019"-->
+    <!--versionName="2.0.3">-->
+    <!--<changelogtext>[b][font color=red]New![/font][/b] Add AllDebrid</changelogtext>-->
+    <!--<changelogtext>[b][font color=red]New![/font][/b] Remove advertising with bitcoin-->
+    <!--</changelogtext>-->
+    <!--<changelogtext>Add providers : QQMovies,DLLLink,AllRelease,ZeroTV</changelogtext>-->
+    <!--<changelogtext>Fixed Providers : Lordmovies,Dizigold,OnePutlocker,NTMovies,FliXanityBased...-->
+    <!--</changelogtext>-->
+    <!--<changelogtext>Cached RDTorrent : no longer adding new RDTorrent to RD. Just-->
+    <!--waiting until RDTorrent available on RD and get them down - like other apps-->
+    <!--</changelogtext>-->
+    <!--<changelogtext>BugFixed : Episode not load</changelogtext>-->
+    <!--<changelogtext>Improve resume function, app will auto-resume with last selected subtitle-->
+    <!--</changelogtext>-->
+    <!--<changelogtext>Optimize sources</changelogtext>-->
+    <!--</changelogversion>-->
+
+    <!--<changelogversion-->
+    <!--changeDate="May 16,2019"-->
+    <!--versionName="2.0.2">-->
+    <!--<changelogtext>HotFix: sorting Episodes</changelogtext>-->
+    <!--<changelogtext>Add sorting seasons option</changelogtext>-->
+    <!--</changelogversion>-->
+
+    <!--<changelogversion-->
+    <!--changeDate="May 15,2019"-->
+    <!--versionName="2.0.1">-->
+    <!--<changelogtext>Fixed subtitle and some providers</changelogtext>-->
+    <!--</changelogversion>-->
+
+    <!--<changelogversion-->
+    <!--changeDate="May 12,2019"-->
+    <!--versionName="2.0.0">-->
+    <!--<changelogtext>[b][font color=red]New![/font][/b] Add new TVShow User Interface (Add-->
+    <!--recomendation section)-->
+    <!--</changelogtext>-->
+    <!--<changelogtext>[b][font color=red]New![/font][/b] Pull episodes data from tvdb to prevent-->
+    <!--missing episode-->
+    <!--</changelogtext>-->
+    <!--<changelogtext>[b][font color=red]New![/font][/b] Add copy stream link to Clipboard option-->
+    <!--</changelogtext>-->
+    <!--<changelogtext>[b][font color=red]New![/font][/b] Long press to add/remove watched-->
+    <!--season/episode-->
+    <!--</changelogtext>-->
+    <!--<changelogtext>Add ChangeLog option in setting</changelogtext>-->
+    <!--<changelogtext>New version available will show in left navigation bar</changelogtext>-->
+
+    <!--<changelogtext>Fix subtitles downloader</changelogtext>-->
+    <!--<changelogtext>Fix Sync watched episodes (in tvShow)</changelogtext>-->
+    <!--<changelogtext>Fix providers :-->
+    <!--ReleaseBB,DDLValley,FFilms,GoMovies,NTMovies,OneMovie,OnePutlocker...-->
+    <!--</changelogtext>-->
+    <!--<changelogtext>Free member code for first 1000 devices/ 1 month. The code is :-->
+    <!--a654ad1b-d413-4c23-b402-e8dac4e762a5-->
+    <!--</changelogtext>-->
+
+    <!--</changelogversion>-->
+
+    <!--<changelogversion-->
+    <!--changeDate="Mar 26,2019"-->
+    <!--versionName="1.5.2">-->
+    <!--<changelogtext>[b][font color=red]New![/font][/b] Sort link by quality</changelogtext>-->
+    <!--<changelogtext>Add providers : TYSee,BestFilms</changelogtext>-->
+    <!--<changelogtext>Fixed Providers : FMovies,Cinema,MoviesDBZar,PHMovies,TWODDL,Lordmovies-->
+    <!--</changelogtext>-->
+    <!--<changelogtext>Optimize performance for low devices</changelogtext>-->
+    <!--<changelogtext>Fixed bug : TMDB API not working on android 4.x</changelogtext>-->
+    <!--</changelogversion>-->
+
+    <!--<changelogversion-->
+    <!--changeDate="Mar 16,2019"-->
+    <!--versionName="1.5.1">-->
+    <!--<changelogtext>Add provider : MoviesDBZar</changelogtext>-->
+    <!--<changelogtext>Fix provider : ReleaseBB</changelogtext>-->
+    <!--<changelogtext>Fix provider : Bioskopkeren</changelogtext>-->
+    <!--<changelogtext>Fix provider : LordMovies</changelogtext>-->
+    <!--<changelogtext>Fix provider : Dizist</changelogtext>-->
+    <!--<changelogtext>Fix provider : BestFlix</changelogtext>-->
+    <!--<changelogtext>Fix provider : CloudMovies</changelogtext>-->
+    <!--<changelogtext>Fix provider : CMovies</changelogtext>-->
+    <!--<changelogtext>Fix provider : Wawani</changelogtext>-->
+    <!--<changelogtext>Fix Reslover : Nofile</changelogtext>-->
+    <!--<changelogtext>Fix Reslover : VidStreaming</changelogtext>-->
+    <!--</changelogversion>-->
+
+    <!--<changelogversion-->
+    <!--changeDate="Mar 9,2019"-->
+    <!--versionName="1.5.0">-->
+    <!--<changelogtext>[b][font color=green]Code improvement and optimization[/font][/b]</changelogtext>-->
+    <!--<changelogtext>[b][font color=red]New![/font][/b] Add filter provider options</changelogtext>-->
+    <!--<changelogtext>Add multi search called cinema</changelogtext>-->
+    <!--<changelogtext>Optimize Low profile mode, try it if you feel your device is lagging or freezing</changelogtext>-->
+    <!--<changelogtext>Fix chromeCast</changelogtext>-->
+    <!--<changelogtext>Auto pick subtitle on chromecast</changelogtext>-->
+    <!--</changelogversion>-->
+
+    <!--<changelogversion-->
+    <!--changeDate="Mar 3,2019"-->
+    <!--versionName="1.4.6">-->
+    <!--<changelogtext>Optimize performance</changelogtext>-->
+    <!--<changelogtext>Add more 20+ 4k providers</changelogtext>-->
+    <!--<changelogtext>Fix auto play next</changelogtext>-->
+    <!--</changelogversion>-->
+
+    <!--<changelogversion-->
+    <!--changeDate="Feb 28,2019"-->
+    <!--versionName="1.4.5">-->
+    <!--<changelogtext>BugFixed : app crashes or freezes from server issue (tested)</changelogtext>-->
+    <!--<changelogtext>Because server changed, HD new release only supports 1.4.5 or higher</changelogtext>-->
+    <!--</changelogversion>-->
+
+    <!--<changelogversion-->
+    <!--changeDate="Feb 26,2019"-->
+    <!--versionName="1.4.4">-->
+    <!--<changelogtext>[b][font color=red]New![/font][/b]Add RealDebrid cache RDTorrent api (turn on in Setting) </changelogtext>-->
+    <!--<changelogtext>[b][font color=red]New![/font][/b]Add RealDebrid user info - reLogin required </changelogtext>-->
+    <!--<changelogtext>Add providers : TTPB,1337</changelogtext>-->
+    <!--<changelogtext>Fixed some providers </changelogtext>-->
+    <!--</changelogversion>-->
+
+    <!--<changelogversion-->
+    <!--changeDate="Feb 2,2019"-->
+    <!--versionName="1.4.3">-->
+    <!--<changelogtext>Add disclaimer</changelogtext>-->
+    <!--</changelogversion>-->
+
+    <!--<changelogversion-->
+    <!--changeDate="Jan 27,2019"-->
+    <!--versionName="1.4.2">-->
+    <!--<changelogtext>Fix providers : Afdah,PutPlocker,ReleaseBB,OneMovie,NovaMovie,FilmXy,Vidics ...</changelogtext>-->
+    <!--<changelogtext>Fix RapidVideo</changelogtext>-->
+    <!--<changelogtext>Add provider : NTMovies</changelogtext>-->
+    <!--</changelogversion>-->
+
+    <!--<changelogversion-->
+    <!--changeDate="Jan 7,2019"-->
+    <!--versionName="1.4.1">-->
+    <!--<changelogtext>Add option Resolver RealDebrid Only</changelogtext>-->
+    <!--<changelogtext>Fix Serial Guide issue with play with option</changelogtext>-->
+    <!--<changelogtext>Speed up get link</changelogtext>-->
+    <!--<changelogtext>Update and add more providers</changelogtext>-->
+    <!--<changelogtext>Add launcher icon for Android TV</changelogtext>-->
+    <!--<changelogtext>Add TVShow Calendar. Login Trakt to get your shows only</changelogtext>-->
+    <!--</changelogversion>ma-->
+
+    <!--<changelogversion-->
+    <!--changeDate="Dec 24,2018"-->
+    <!--versionName="1.4.0">-->
+    <!--<changelogtext>Fixed sync watched list in local and trakt</changelogtext>-->
+    <!--<changelogtext>Fixed MX,VLC player when Play with subtitles option</changelogtext>-->
+    <!--<changelogtext>Fixed many minor bugs</changelogtext>-->
+    <!--<changelogtext>Fixed tvShow providers</changelogtext>-->
+    <!--<changelogtext>Make sorting by size as default</changelogtext>-->
+    <!--</changelogversion>-->
+
+    <!--<changelogversion-->
+    <!--changeDate="Dec 19,2018"-->
+    <!--versionName="1.3.9">-->
+    <!--<changelogtext>Fixed source : CMovies</changelogtext>-->
+    <!--<changelogtext>Fixed bug : Link will loop and restart when it gets to the end </changelogtext>-->
+    <!--<changelogtext>Upgrade auto play next</changelogtext>-->
+    <!--<changelogtext>Add SORTING mode(Sort by size,host priority)</changelogtext>-->
+    <!--<changelogtext>Change link inside built-in player</changelogtext>-->
+    <!--</changelogversion>-->
+
+    <!--<changelogversion-->
+    <!--changeDate="Dec 17,2018"-->
+    <!--versionName="1.3.8">-->
+    <!--<changelogtext>Fixed randomly crash when fetch data from trakt</changelogtext>-->
+    <!--<changelogtext>Default turn on Low Profile mode for android firmware less than 5.0 </changelogtext>-->
+    <!--</changelogversion>-->
+
+    <!--<changelogversion-->
+    <!--changeDate="Dec 16,2018"-->
+    <!--versionName="1.3.6">-->
+    <!--<changelogtext>[b][font color=red]New![/font][/b]Built-in player : Auto switching link when playback failed</changelogtext>-->
+    <!--<changelogtext>[b][font color=red]New![/font][/b]Add trending tvShow</changelogtext>-->
+    <!--<changelogtext>[b][font color=red]New![/font][/b]Optimize performance and add low profile setting.</changelogtext>-->
+
+    <!--<changelogtext>Fixed bug : Freeze app with Serial Guide</changelogtext>-->
+    <!--<changelogtext>Fixed bug : no poster on new android version</changelogtext>-->
+    <!--<changelogtext>Update Real-debrid provider</changelogtext>-->
+    <!--</changelogversion>-->
+
+    <!--<changelogversion-->
+    <!--changeDate="Dec 12,2018"-->
+    <!--versionName="1.3.5">-->
+    <!--<changelogtext>Fix some Real-Debrid providers</changelogtext>-->
+    <!--<changelogtext>Fix sound problems in built-in player</changelogtext>-->
+    <!--<changelogtext>Set filename for ADM downloader.</changelogtext>-->
+    <!--<changelogtext>Add 10 providers (Cinema,WatchMovieHD,BestFlix,LordMovies,CloudMovies,MovieGL,WorldUS,BestTvFix,CMovies,PHMovies)</changelogtext>-->
+    <!--</changelogversion>-->
+
+    <!--<changelogversion-->
+    <!--changeDate="Dec 3,2018"-->
+    <!--versionName="1.3.4">-->
+    <!--<changelogtext>[b][font color=red]New![/font][/b] Show HD only option</changelogtext>-->
+    <!--<changelogtext>Add voice search</changelogtext>-->
+    <!--<changelogtext>Optimize loading time</changelogtext>-->
+    <!--<changelogtext>Add Christmas section</changelogtext>-->
+    <!--<changelogtext>Fixed existing providers</changelogtext>-->
+    <!--<changelogtext>Add 10+ providers (more GoogleVideos)</changelogtext>-->
+    <!--<changelogtext>Fix bugs</changelogtext>-->
+    <!--</changelogversion>-->
+
+    <!--<changelogversion-->
+    <!--changeDate="Nov 11,2018"-->
+    <!--versionName="1.3.3">-->
+    <!--<changelogtext>[b][font color=red]New![/font][/b] Auto play next episode</changelogtext>-->
+    <!--<changelogtext>Add more tv provider</changelogtext>-->
+    <!--<changelogtext>Update tv (show more season,episode details)</changelogtext>-->
+    <!--<changelogtext>Add filter year</changelogtext>-->
+    <!--<changelogtext>Alphabatize favorites</changelogtext>-->
+    <!--<changelogtext>Resize the poster for some Android boxs</changelogtext>-->
+    <!--<changelogtext>Add title for external player</changelogtext>-->
+    <!--<changelogtext>Customize host priority in setting</changelogtext>-->
+    <!--</changelogversion>-->
+
+    <!--<changelogversion-->
+    <!--changeDate="Nov 2,2018"-->
+    <!--versionName="1.3.2">-->
+    <!--<changelogtext>[b][font color=red]New![/font][/b] Add Netflix™ List</changelogtext>-->
+    <!--<changelogtext>[b][font color=red]New![/font][/b] Add Amazon™ List</changelogtext>-->
+    <!--<changelogtext>[b][font color=red]New![/font][/b] Add Hulu™ List</changelogtext>-->
+    <!--<changelogtext>[b][font color=red]New![/font][/b] Add YouTube™ Red</changelogtext>-->
+    <!--<changelogtext>Faster speed of getting sources</changelogtext>-->
+    <!--<changelogtext>Fix providers </changelogtext>-->
+    <!--<changelogtext>More optimization</changelogtext>-->
+    <!--</changelogversion>-->
+
+    <!--<changelogversion-->
+    <!--changeDate="Oct 24,2018"-->
+    <!--versionName="1.3.1">-->
+    <!--<changelogtext>Fix chrome cast on tvShow</changelogtext>-->
+    <!--<changelogtext>Fix crash connection timeout</changelogtext>-->
+    <!--<changelogtext>Add Movie series guide</changelogtext>-->
+    <!--<changelogtext>Fixed some provides</changelogtext>-->
+    <!--<changelogtext>Highlight control button in built-in player</changelogtext>-->
+    <!--</changelogversion>-->
+
+    <!--<changelogversion-->
+    <!--changeDate="Oct 23,2018"-->
+    <!--versionName="1.3.0">-->
+    <!--<changelogtext>Hotfix : Critical issue for chromecast</changelogtext>-->
+    <!--<changelogtext>Fixed crash in TopEuroPi provider</changelogtext>-->
+    <!--</changelogversion>-->
+
+    <!--<changelogversion-->
+    <!--changeDate="Oct 23,2018"-->
+    <!--versionName="1.2.9">-->
+    <!--<changelogtext>[b][font color=red]New![/font][/b] Add subtitle for chromecast</changelogtext>-->
+    <!--<changelogtext>[b][font color=red]New![/font][/b] Remove view counter </changelogtext>-->
+    <!--<changelogtext>Improve Series Guide</changelogtext>-->
+    <!--<changelogtext>Add 4K/2K providers</changelogtext>-->
+    <!--<changelogtext>Fixed navigation for Nvdia Shield</changelogtext>-->
+    <!--<changelogtext>Add more stream</changelogtext>-->
+    <!--<changelogtext>Change name of app icon</changelogtext>-->
+    <!--</changelogversion>-->
+
+    <!--<changelogversion-->
+    <!--changeDate="Oct 15,2018"-->
+    <!--versionName="1.2.8">-->
+    <!--<changelogtext>[b][font color=red]New![/font][/b] Integration with Series Guide (tvShow only)</changelogtext>-->
+    <!--<changelogtext>Add air date to episode</changelogtext>-->
+    <!--<changelogtext>Choose play with default option</changelogtext>-->
+    <!--<changelogtext>Fix playback fail on HLS streams</changelogtext>-->
+    <!--<changelogtext>Fix search error, ...</changelogtext>-->
+    <!--</changelogversion>-->
+
+    <!--<changelogversion-->
+    <!--changeDate="Oct 12,2018"-->
+    <!--versionName="1.2.7">-->
+    <!--<changelogtext>[b][font color=red]New![/font][/b] Add New HD Release category</changelogtext>-->
+    <!--<changelogtext>[b][font color=red]New![/font][/b] Add Open with option</changelogtext>-->
+    <!--<changelogtext> Add more Google Video</changelogtext>-->
+    <!--<changelogtext> Update some providers</changelogtext>-->
+    <!--<changelogtext> Bug fix</changelogtext>-->
+    <!--</changelogversion>-->
+
+    <!--<changelogversion-->
+    <!--changeDate="Oct 8,2018"-->
+    <!--versionName="1.2.6">-->
+    <!--<changelogtext>Add history</changelogtext>-->
+    <!--<changelogtext>Filter favorite (movies/tvShows/all)</changelogtext>-->
+    <!--<changelogtext>Sort streamlinks </changelogtext>-->
+    <!--<changelogtext>Change text color in login page of trakt vs realDebird</changelogtext>-->
+    <!--<changelogtext>Change color CastButton</changelogtext>-->
+    <!--<changelogtext>Change Layout android TV</changelogtext>-->
+    <!--<changelogtext>Fix crash, improve trakt</changelogtext>-->
+    <!--</changelogversion>-->
+
+    <!--<changelogversion-->
+    <!--changeDate="Oct 3,2018"-->
+    <!--versionName="1.2.5">-->
+    <!--<changelogtext>[b][font color=red]New![/font][/b] Supported Trakt.tv</changelogtext>-->
+    <!--<changelogtext>Add download path options</changelogtext>-->
+    <!--<changelogtext>Save watched episodes</changelogtext>-->
+    <!--<changelogtext>Update UI for android TV</changelogtext>-->
+    <!--<changelogtext>Improve subtitle</changelogtext>-->
+    <!--<changelogtext>Increase the efficiency of getting sources</changelogtext>-->
+    <!--</changelogversion>-->
+
+    <!--<changelogversion-->
+    <!--changeDate="Sep 21,2018"-->
+    <!--versionName="1.2.3">-->
+    <!--<changelogtext>[b][font color=red]New![/font][/b] support external player(MX,VLC player)</changelogtext>-->
+    <!--<changelogtext>Fix crash on Nvidia Shield and some android-boxs</changelogtext>-->
+    <!--<changelogtext>Add subtitle language options</changelogtext>-->
+    <!--<changelogtext>Add donate button</changelogtext>-->
+    <!--<changelogtext>Fix UI</changelogtext>-->
+    <!--</changelogversion>-->
+
+    <!--<changelogversion-->
+    <!--changeDate="Sep 13,2018"-->
+    <!--versionName="1.2.0">-->
+    <!--<changelogtext>[b][font color=red]New![/font][/b] Support Real-Debird</changelogtext>-->
+    <!--<changelogtext>[b][font color=red]New![/font][/b] Support Fire Tv Stick</changelogtext>-->
+    <!--<changelogtext>Bug fix</changelogtext>-->
+    <!--</changelogversion>-->
+
+    <!--<changelogversion-->
+    <!--changeDate="Aug 12,2018"-->
+    <!--versionName="1.1.0">-->
+    <!--<changelogtext>[b][font color=red]New![/font][/b] Add more faster HD server</changelogtext>-->
+    <!--<changelogtext>[b][font color=red]New![/font][/b] Speed up downloader</changelogtext>-->
+    <!--<changelogtext>[b][font color=green]Fixed Bug![/font][/b] Change color of CastIcon</changelogtext>-->
+    <!--&lt;!&ndash;<changelogtext>[b][font color=green]Fixed Bug![/font][/b] Subtitle for chromecast</changelogtext>&ndash;&gt;-->
+    <!--<changelogtext>[b][font color=green]Fixed Bug![/font][/b] Don't show ads when app collecting stream.</changelogtext>-->
+    <!--</changelogversion>-->
+
+    <!--<changelogversion-->
+    <!--changeDate="Jul 19,2018"-->
+    <!--versionName="1.0.9">-->
+    <!--<changelogtext>[b][font color=red]New![/font][/b] Add facebook fanpage , you can write some feedbacks to help us improve app better.-->
+    <!--</changelogtext>-->
+    <!--<changelogtext>Fix crash</changelogtext>-->
+    <!--</changelogversion>-->
+
+    <!--<changelogversion-->
+    <!--changeDate="Jul 10,2018"-->
+    <!--versionName="1.0.8">-->
+    <!--<changelogtext>[b][font color=red]New![/font][/b] Change New UI. Filter tvShow by Genre.-->
+    <!--</changelogtext>-->
+    <!--<changelogtext>[b][font color=red]New![/font][/b] Auto select best quality vs speed movie stream, you can view video ads while app collect the best stream link.-->
+    <!--</changelogtext>-->
+    <!--<changelogtext>Bug fix</changelogtext>-->
+    <!--</changelogversion>-->
+
+    <!--<changelogversion-->
+    <!--changeDate="Jun 29,2018"-->
+    <!--versionName="1.0.7">-->
+    <!--<changelogtext>[b][font color=red]New![/font][/b] Update tv/Show subtitle.</changelogtext>-->
+    <!--<changelogtext>Filter link die.</changelogtext>-->
+    <!--</changelogversion>-->
+
+    <!--<changelogversion-->
+    <!--changeDate="Jun 24,2018"-->
+    <!--versionName="1.0.6">-->
+    <!--<changelogtext>Add more GoogleVideo (SuperFast!!)-->
+    <!--</changelogtext>-->
+    <!--<changelogtext>Free 99999 views only this version</changelogtext>-->
+    <!--<changelogtext>Bug fix</changelogtext>-->
+    <!--</changelogversion>-->
+
+    <!--<changelogversion-->
+    <!--changeDate="Jun 22,2018"-->
+    <!--versionName="1.0.5">-->
+    <!--<changelogtext>[b][font color=green]BugFixed :[/font][/b] Cast video to ChromeCast/Android TV with chromecast built in.</changelogtext>-->
+    <!--<changelogtext>Sorting Stream.</changelogtext>-->
+    <!--<changelogtext>Add more servers.</changelogtext>-->
+    <!--<changelogtext>Keep Subtitle when app go to background.</changelogtext>-->
+    <!--<changelogtext>[b][font color=green]BugFixed :[/font][/b] Save TVShow to favorite, Your previous favorite will be reset.</changelogtext>-->
+    <!--</changelogversion>-->
+
+    <!--<changelogversion-->
+    <!--changeDate="May 31,2018"-->
+    <!--versionName="1.0.4">-->
+    <!--<changelogtext>[b][font color=red]New![/font][/b] Download movie/tvShow.</changelogtext>-->
+    <!--<changelogtext>[b][font color=red]New![/font][/b] Auto update from app.</changelogtext>-->
+    <!--<changelogtext>Critical Crash bug fixed.</changelogtext>-->
+    <!--</changelogversion>-->
+
+    <!--<changelogversion-->
+    <!--changeDate="May 24,2018"-->
+    <!--versionName="1.0.3">-->
+    <!--<changelogtext>[b][font color=red]New![/font][/b] Resume the last position or start over movie.-->
+    <!--</changelogtext>-->
+    <!--<changelogtext>Add more server.</changelogtext>-->
+    <!--</changelogversion>-->
+
+    <!--<changelogversion-->
+    <!--changeDate="May 20,2018"-->
+    <!--versionName="1.0.2">-->
+    <!--<changelogtext>[b][font color=red]New![/font][/b] TV shows available to watch.</changelogtext>-->
+    <!--<changelogtext>[b][font color=red]New![/font][/b] Custom select stream from new scene.</changelogtext>-->
+    <!--<changelogtext>[b][font color=red]New![/font][/b] Resize videoplayer.</changelogtext>-->
+    <!--<changelogtext>Change VideoPlayer to ignore crash randomly. </changelogtext>-->
+    <!--<changelogtext>Fix bugs.</changelogtext>-->
+    <!--<changelogtext>Dont' show Ads many times!</changelogtext>-->
+    <!--</changelogversion>-->
+
+    <!--<changelogversion-->
+    <!--changeDate="May 20,2018"-->
+    <!--versionName="1.0.1">-->
+    <!--<changelogtext>Optimize source finding logics. Source finding is much faster now!</changelogtext>-->
+    <!--<changelogtext>Fix sometimes subtitles not loading.</changelogtext>-->
+    <!--<changelogtext>Fixed bugs and crashes.</changelogtext>-->
+    <!--</changelogversion>-->
+
+    <!--<changelogversion-->
+    <!--changeDate="May 6,2018"-->
+    <!--versionName="1.0.0">-->
+    <!--<changelogtext>Initial release.</changelogtext>-->
+    <!--</changelogversion>-->
+
+</changelog>
+
+

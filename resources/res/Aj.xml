@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="@dimen/keyline_1" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="5dp">
+    <TextView android:textSize="30sp" android:id="@+id/tvTitlte" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/choose_product_string"/>
+    <EditText android:textSize="@dimen/text_size_medium" android:id="@+id/tvEmail" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/hint_input_email" android:inputType="textEmailAddress" android:imeOptions="actionDone"/>
+    <RadioGroup android:orientation="vertical" android:id="@+id/radioGroupProducts" android:background="@drawable/rounded_corner" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ProgressBar android:id="@+id/progressBarloading" android:layout_width="match_parent" android:layout_height="wrap_content" style="?android:attr/progressBarStyle"/>
+    </RadioGroup>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <CheckBox android:id="@+id/cbSplitKey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Split to multiple keys ( +0.3 UDS/key)"/>
+        <ImageButton android:layout_gravity="right" android:id="@+id/imgbtnDetails" android:background="@color/transparent" android:layout_width="31dp" android:layout_height="match_parent" android:src="@android:drawable/ic_menu_info_details"/>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/text_size_small" android:textColor="@color/material_red400" android:id="@+id/tvValidate" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text=""/>
+    <Button android:id="@+id/btnNext" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="NEXT"/>
+</LinearLayout>

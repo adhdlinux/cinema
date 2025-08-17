@@ -1,0 +1,115 @@
+package com.facebook.react.modules.fresco;
+
+import com.facebook.common.logging.FLog;
+import com.facebook.drawee.backends.pipeline.Fresco;
+import com.facebook.imagepipeline.backends.okhttp3.OkHttpImagePipelineConfigFactory;
+import com.facebook.imagepipeline.core.ImagePipeline;
+import com.facebook.imagepipeline.core.ImagePipelineConfig;
+import com.facebook.react.bridge.LifecycleEventListener;
+import com.facebook.react.bridge.ReactApplicationContext;
+import com.facebook.react.bridge.ReactContext;
+import com.facebook.react.bridge.ReactContextBaseJavaModule;
+import com.facebook.react.common.ReactConstants;
+import com.facebook.react.module.annotations.ReactModule;
+import com.facebook.react.modules.common.ModuleDataCleaner;
+import com.facebook.react.modules.network.CookieJarContainer;
+import com.facebook.react.modules.network.ForwardingCookieHandler;
+import com.facebook.react.modules.network.OkHttpClientProvider;
+import com.facebook.react.turbomodule.core.interfaces.TurboModule;
+import java.util.HashSet;
+import okhttp3.JavaNetCookieJar;
+import okhttp3.OkHttpClient;
+
+@ReactModule(name = "FrescoModule", needsEagerInit = true)
+public class FrescoModule extends ReactContextBaseJavaModule implements ModuleDataCleaner.Cleanable, LifecycleEventListener, TurboModule {
+    public static final String NAME = "FrescoModule";
+    private static boolean sHasBeenInitialized = false;
+    private final boolean mClearOnDestroy;
+    private ImagePipelineConfig mConfig;
+    private ImagePipeline mImagePipeline;
+
+    public FrescoModule(ReactApplicationContext reactApplicationContext) {
+        this(reactApplicationContext, true, (ImagePipelineConfig) null);
+    }
+
+    private static ImagePipelineConfig getDefaultConfig(ReactContext reactContext) {
+        return getDefaultConfigBuilder(reactContext).build();
+    }
+
+    public static ImagePipelineConfig.Builder getDefaultConfigBuilder(ReactContext reactContext) {
+        HashSet hashSet = new HashSet();
+        hashSet.add(new SystraceRequestListener());
+        OkHttpClient createClient = OkHttpClientProvider.createClient();
+        ((CookieJarContainer) createClient.cookieJar()).setCookieJar(new JavaNetCookieJar(new ForwardingCookieHandler(reactContext)));
+        return OkHttpImagePipelineConfigFactory.newBuilder(reactContext.getApplicationContext(), createClient).setNetworkFetcher(new ReactOkHttpNetworkFetcher(createClient)).setDownsampleEnabled(false).setRequestListeners(hashSet);
+    }
+
+    private ImagePipeline getImagePipeline() {
+        if (this.mImagePipeline == null) {
+            this.mImagePipeline = Fresco.getImagePipeline();
+        }
+        return this.mImagePipeline;
+    }
+
+    public static boolean hasBeenInitialized() {
+        return sHasBeenInitialized;
+    }
+
+    public void clearSensitiveData() {
+        getImagePipeline().clearCaches();
+    }
+
+    public String getName() {
+        return NAME;
+    }
+
+    public void initialize() {
+        super.initialize();
+        getReactApplicationContext().addLifecycleEventListener(this);
+        if (!hasBeenInitialized()) {
+            if (this.mConfig == null) {
+                this.mConfig = getDefaultConfig(getReactApplicationContext());
+            }
+            Fresco.initialize(getReactApplicationContext().getApplicationContext(), this.mConfig);
+            sHasBeenInitialized = true;
+        } else if (this.mConfig != null) {
+            FLog.w(ReactConstants.TAG, "Fresco has already been initialized with a different config. The new Fresco configuration will be ignored!");
+        }
+        this.mConfig = null;
+    }
+
+    public void invalidate() {
+        super.invalidate();
+        ReactApplicationContext reactApplicationContextIfActiveOrWarn = getReactApplicationContextIfActiveOrWarn();
+        if (reactApplicationContextIfActiveOrWarn != null) {
+            reactApplicationContextIfActiveOrWarn.removeLifecycleEventListener(this);
+        }
+    }
+
+    public void onHostDestroy() {
+        if (hasBeenInitialized() && this.mClearOnDestroy) {
+            getImagePipeline().clearMemoryCaches();
+        }
+    }
+
+    public void onHostPause() {
+    }
+
+    public void onHostResume() {
+    }
+
+    public FrescoModule(ReactApplicationContext reactApplicationContext, boolean z2) {
+        this(reactApplicationContext, z2, (ImagePipelineConfig) null);
+    }
+
+    public FrescoModule(ReactApplicationContext reactApplicationContext, ImagePipeline imagePipeline, boolean z2) {
+        this(reactApplicationContext, z2);
+        this.mImagePipeline = imagePipeline;
+    }
+
+    public FrescoModule(ReactApplicationContext reactApplicationContext, boolean z2, ImagePipelineConfig imagePipelineConfig) {
+        super(reactApplicationContext);
+        this.mClearOnDestroy = z2;
+        this.mConfig = imagePipelineConfig;
+    }
+}

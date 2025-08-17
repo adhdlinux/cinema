@@ -1,0 +1,15 @@
+package com.google.android.gms.internal.ads;
+
+public final /* synthetic */ class zzix implements zzel {
+    public final /* synthetic */ zzlc zza;
+
+    public /* synthetic */ zzix(zzlc zzlc) {
+        this.zza = zzlc;
+    }
+
+    public final void zza(Object obj) {
+        zzlc zzlc = this.zza;
+        int i2 = zzjx.zzd;
+        ((zzcm) obj).zzb(zzlc.zzg);
+    }
+}

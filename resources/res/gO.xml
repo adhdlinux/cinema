@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:background="@drawable/button_border_gray" android:padding="2dp" android:focusable="true" android:layout_width="match_parent" android:layout_height="30dp" android:layout_margin="4dp">
+    <TextView android:textSize="20dp" android:layout_gravity="left" android:id="@+id/help_provider_text" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:text="provider" android:layout_weight="0.75" android:textAlignment="center"/>
+    <Button android:textSize="20dp" android:layout_gravity="right" android:id="@+id/btn_help_verify" android:background="@color/gray_background" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="20dp" android:text="@string/verify" android:layout_weight="0.25" android:textAlignment="center"/>
+</LinearLayout>

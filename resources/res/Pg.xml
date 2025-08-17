@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#bfd4e7" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_size_large" android:textColor="#ffffff" android:gravity="center" android:id="@+id/textView2" android:background="@color/gray_background" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/autoupdate_title"/>
+        <View android:background="@color/card_shape_background" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <TextView android:gravity="center" android:id="@+id/diag_btn_autoupdate_yes_mess" android:layout_width="match_parent" android:layout_height="50dp" android:text="@string/autoupdate_confirm_content" android:inputType="textMultiLine"/>
+        <LinearLayout android:gravity="right" android:orientation="horizontal" android:background="@color/theme_primary_dark" android:layout_width="match_parent" android:layout_height="30dp">
+            <Button android:textColor="#ffffff" android:id="@+id/diag_btn_confirm_no" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/autoupdate_confirm_no"/>
+            <Button android:textColor="#ffffff" android:id="@+id/diag_btnconfirm_yes" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/autoupdate_confirm_yes"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

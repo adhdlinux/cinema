@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MovieDetailPlayImage">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">48dp</item>
+    </style>
+    <style name="Widget.Design.TabLayout">
+        <item name="tabGravity">1</item>
+        <item name="tabMode">1</item>
+    </style>
+</resources>

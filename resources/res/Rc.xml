@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/movie_poster_play" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_label_outline_white_24dp"/>
+    <TextView android:textAppearance="?attr/textAppearanceListItem" android:textSize="@dimen/text_size_large" android:textStyle="bold" android:textColor="@color/body_text_white" android:id="@+id/id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" style="@style/MovieItemText"/>
+    <TextView android:textAppearance="?attr/textAppearanceListItem" android:textSize="@dimen/text_size_xlarge" android:textStyle="bold" android:textColor="@color/body_text_white" android:id="@+id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/item_spacing_full" android:layout_marginRight="@dimen/spinner_drawable_padding" android:lines="1" style="@style/MovieItemText"/>
+</LinearLayout>

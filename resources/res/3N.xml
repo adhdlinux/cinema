@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/loadingPanel" android:layout_width="match_parent" android:layout_height="wrap_content" android:minWidth="120dp">
+        <TextView android:gravity="center" android:id="@+id/textView13" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Auto connect" android:textAlignment="center"/>
+        <RelativeLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true"/>
+        </RelativeLayout>
+        <Button android:textColor="#ffffff" android:layout_gravity="right" android:id="@+id/diag_btn_load_confirm_no" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/autoupdate_confirm_cancel" android:layout_alignParentRight="false"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/content_ip" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:minWidth="120dp">
+        <LinearLayout android:orientation="horizontal" android:background="@color/gray_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_large" android:textColor="#ffffff" android:gravity="left" android:id="@+id/textView2" android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/dialog_input_ip_title" android:layout_weight="0.75"/>
+            <ImageView android:id="@+id/imageView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.25" android:tooltipText="@string/dialog_input_ip_tip" app:srcCompat="@drawable/ic_info_outline_white_36dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="10dp">
+            <EditText android:id="@+id/textip1" android:background="@color/theme_primary_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="172" android:ems="10" android:maxLength="3" android:layout_weight="1" android:inputType="number" android:textAlignment="center"/>
+            <TextView android:id="@+id/textView10" android:background="@color/theme_primary_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=":"/>
+            <EditText android:id="@+id/textip2" android:background="@color/theme_primary_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="25" android:ems="10" android:maxLength="3" android:layout_weight="1" android:inputType="number" android:textAlignment="center"/>
+            <TextView android:id="@+id/textView11" android:background="@color/theme_primary_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=":"/>
+            <EditText android:id="@+id/textip3" android:background="@color/theme_primary_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="1" android:ems="10" android:maxLength="3" android:layout_weight="1" android:inputType="number" android:textAlignment="center"/>
+            <TextView android:id="@+id/textView12" android:background="@color/theme_primary_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=":"/>
+            <EditText android:id="@+id/textip4" android:background="@color/theme_primary_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="1" android:ems="10" android:maxLength="3" android:layout_weight="1" android:inputType="number" android:textAlignment="center"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="right" android:orientation="horizontal" android:background="@color/theme_primary_dark" android:layout_width="match_parent" android:layout_height="30dp">
+            <Button android:textColor="#ffffff" android:id="@+id/diag_btn_confirm_no" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/autoupdate_confirm_cancel"/>
+            <Button android:textColor="#ffffff" android:id="@+id/diag_btnconfirm_yes" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dialog_input_ip_connect"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

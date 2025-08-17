@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <EditText android:gravity="center" android:id="@+id/edtUserName" android:background="@drawable/rounded_corner" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="8dp" android:hint="@string/input_flow_user" android:maxLines="1" android:lines="1" android:singleLine="true" android:layout_weight="1"/>
+        <Button android:id="@+id/btnSubmit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/load_user_list"/>
+    </LinearLayout>
+    <ProgressBar android:layout_gravity="center_horizontal" android:id="@+id/loading" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyle"/>
+    <TextView android:textStyle="bold" android:layout_gravity="center_horizontal" android:id="@+id/errorText" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvList" android:focusable="true" android:focusableInTouchMode="true" android:scrollbars="vertical" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>
